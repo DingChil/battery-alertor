@@ -7,63 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47D4F22124487B3500986BA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D4F22024487B3500986BA7 /* AppDelegate.swift */; };
-		47D4F22324487B3500986BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D4F22224487B3500986BA7 /* ViewController.swift */; };
-		47D4F22524487B3700986BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D4F22424487B3700986BA7 /* Assets.xcassets */; };
-		47D4F22824487B3700986BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D4F22624487B3700986BA7 /* Main.storyboard */; };
-		47D4F23424487B3800986BA7 /* BatteryAlertorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D4F23324487B3800986BA7 /* BatteryAlertorTests.swift */; };
-		47D4F23F24487B3800986BA7 /* BatteryAlertorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D4F23E24487B3800986BA7 /* BatteryAlertorUITests.swift */; };
+		4739519924488787006662B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739519824488787006662B0 /* AppDelegate.swift */; };
+		4739519B24488787006662B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4739519A24488787006662B0 /* ContentView.swift */; };
+		4739519D24488788006662B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4739519C24488788006662B0 /* Assets.xcassets */; };
+		473951A024488788006662B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4739519F24488788006662B0 /* Preview Assets.xcassets */; };
+		473951A324488788006662B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473951A124488788006662B0 /* Main.storyboard */; };
+		473951AF24488788006662B0 /* BatteryAlertorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951AE24488788006662B0 /* BatteryAlertorTests.swift */; };
+		473951BA24488788006662B0 /* BatteryAlertorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951B924488788006662B0 /* BatteryAlertorUITests.swift */; };
+		473951C8244888D1006662B0 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951C7244888D1006662B0 /* EventController.swift */; };
+		473951CA24488F4D006662B0 /* StudySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951C924488F4D006662B0 /* StudySwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		47D4F23024487B3800986BA7 /* PBXContainerItemProxy */ = {
+		473951AB24488788006662B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 47D4F21524487B3500986BA7 /* Project object */;
+			containerPortal = 4739518D24488787006662B0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 47D4F21C24487B3500986BA7;
+			remoteGlobalIDString = 4739519424488787006662B0;
 			remoteInfo = BatteryAlertor;
 		};
-		47D4F23B24487B3800986BA7 /* PBXContainerItemProxy */ = {
+		473951B624488788006662B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 47D4F21524487B3500986BA7 /* Project object */;
+			containerPortal = 4739518D24488787006662B0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 47D4F21C24487B3500986BA7;
+			remoteGlobalIDString = 4739519424488787006662B0;
 			remoteInfo = BatteryAlertor;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47D4F21D24487B3500986BA7 /* Battery Alertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Alertor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47D4F22024487B3500986BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47D4F22224487B3500986BA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		47D4F22424487B3700986BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		47D4F22724487B3700986BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		47D4F22924487B3700986BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47D4F22A24487B3700986BA7 /* BatteryAlertor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryAlertor.entitlements; sourceTree = "<group>"; };
-		47D4F22F24487B3800986BA7 /* BatteryAlertorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryAlertorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		47D4F23324487B3800986BA7 /* BatteryAlertorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertorTests.swift; sourceTree = "<group>"; };
-		47D4F23524487B3800986BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47D4F23A24487B3800986BA7 /* BatteryAlertorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryAlertorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		47D4F23E24487B3800986BA7 /* BatteryAlertorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertorUITests.swift; sourceTree = "<group>"; };
-		47D4F24024487B3800986BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4739519524488787006662B0 /* Battery Alertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Alertor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4739519824488787006662B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4739519A24488787006662B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4739519C24488788006662B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4739519F24488788006662B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		473951A224488788006662B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		473951A424488788006662B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473951A524488788006662B0 /* BatteryAlertor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryAlertor.entitlements; sourceTree = "<group>"; };
+		473951AA24488788006662B0 /* BatteryAlertorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryAlertorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		473951AE24488788006662B0 /* BatteryAlertorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertorTests.swift; sourceTree = "<group>"; };
+		473951B024488788006662B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473951B524488788006662B0 /* BatteryAlertorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryAlertorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		473951B924488788006662B0 /* BatteryAlertorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertorUITests.swift; sourceTree = "<group>"; };
+		473951BB24488788006662B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473951C7244888D1006662B0 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		473951C924488F4D006662B0 /* StudySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		47D4F21A24487B3500986BA7 /* Frameworks */ = {
+		4739519224488787006662B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D4F22C24487B3800986BA7 /* Frameworks */ = {
+		473951A724488788006662B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D4F23724487B3800986BA7 /* Frameworks */ = {
+		473951B224488788006662B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,53 +79,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47D4F21424487B3500986BA7 = {
+		4739518C24488787006662B0 = {
 			isa = PBXGroup;
 			children = (
-				47D4F21F24487B3500986BA7 /* BatteryAlertor */,
-				47D4F23224487B3800986BA7 /* BatteryAlertorTests */,
-				47D4F23D24487B3800986BA7 /* BatteryAlertorUITests */,
-				47D4F21E24487B3500986BA7 /* Products */,
+				4739519724488787006662B0 /* BatteryAlertor */,
+				473951AD24488788006662B0 /* BatteryAlertorTests */,
+				473951B824488788006662B0 /* BatteryAlertorUITests */,
+				4739519624488787006662B0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		47D4F21E24487B3500986BA7 /* Products */ = {
+		4739519624488787006662B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47D4F21D24487B3500986BA7 /* Battery Alertor.app */,
-				47D4F22F24487B3800986BA7 /* BatteryAlertorTests.xctest */,
-				47D4F23A24487B3800986BA7 /* BatteryAlertorUITests.xctest */,
+				4739519524488787006662B0 /* Battery Alertor.app */,
+				473951AA24488788006662B0 /* BatteryAlertorTests.xctest */,
+				473951B524488788006662B0 /* BatteryAlertorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		47D4F21F24487B3500986BA7 /* BatteryAlertor */ = {
+		4739519724488787006662B0 /* BatteryAlertor */ = {
 			isa = PBXGroup;
 			children = (
-				47D4F22024487B3500986BA7 /* AppDelegate.swift */,
-				47D4F22224487B3500986BA7 /* ViewController.swift */,
-				47D4F22424487B3700986BA7 /* Assets.xcassets */,
-				47D4F22624487B3700986BA7 /* Main.storyboard */,
-				47D4F22924487B3700986BA7 /* Info.plist */,
-				47D4F22A24487B3700986BA7 /* BatteryAlertor.entitlements */,
+				4739519824488787006662B0 /* AppDelegate.swift */,
+				4739519A24488787006662B0 /* ContentView.swift */,
+				473951C924488F4D006662B0 /* StudySwift.swift */,
+				473951C7244888D1006662B0 /* EventController.swift */,
+				4739519C24488788006662B0 /* Assets.xcassets */,
+				473951A124488788006662B0 /* Main.storyboard */,
+				473951A424488788006662B0 /* Info.plist */,
+				473951A524488788006662B0 /* BatteryAlertor.entitlements */,
+				4739519E24488788006662B0 /* Preview Content */,
 			);
 			path = BatteryAlertor;
 			sourceTree = "<group>";
 		};
-		47D4F23224487B3800986BA7 /* BatteryAlertorTests */ = {
+		4739519E24488788006662B0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				47D4F23324487B3800986BA7 /* BatteryAlertorTests.swift */,
-				47D4F23524487B3800986BA7 /* Info.plist */,
+				4739519F24488788006662B0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		473951AD24488788006662B0 /* BatteryAlertorTests */ = {
+			isa = PBXGroup;
+			children = (
+				473951AE24488788006662B0 /* BatteryAlertorTests.swift */,
+				473951B024488788006662B0 /* Info.plist */,
 			);
 			path = BatteryAlertorTests;
 			sourceTree = "<group>";
 		};
-		47D4F23D24487B3800986BA7 /* BatteryAlertorUITests */ = {
+		473951B824488788006662B0 /* BatteryAlertorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				47D4F23E24487B3800986BA7 /* BatteryAlertorUITests.swift */,
-				47D4F24024487B3800986BA7 /* Info.plist */,
+				473951B924488788006662B0 /* BatteryAlertorUITests.swift */,
+				473951BB24488788006662B0 /* Info.plist */,
 			);
 			path = BatteryAlertorUITests;
 			sourceTree = "<group>";
@@ -127,13 +144,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		47D4F21C24487B3500986BA7 /* BatteryAlertor */ = {
+		4739519424488787006662B0 /* BatteryAlertor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47D4F24324487B3800986BA7 /* Build configuration list for PBXNativeTarget "BatteryAlertor" */;
+			buildConfigurationList = 473951BE24488788006662B0 /* Build configuration list for PBXNativeTarget "BatteryAlertor" */;
 			buildPhases = (
-				47D4F21924487B3500986BA7 /* Sources */,
-				47D4F21A24487B3500986BA7 /* Frameworks */,
-				47D4F21B24487B3500986BA7 /* Resources */,
+				4739519124488787006662B0 /* Sources */,
+				4739519224488787006662B0 /* Frameworks */,
+				4739519324488787006662B0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -141,69 +158,69 @@
 			);
 			name = BatteryAlertor;
 			productName = BatteryAlertor;
-			productReference = 47D4F21D24487B3500986BA7 /* Battery Alertor.app */;
+			productReference = 4739519524488787006662B0 /* Battery Alertor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		47D4F22E24487B3800986BA7 /* BatteryAlertorTests */ = {
+		473951A924488788006662B0 /* BatteryAlertorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47D4F24624487B3800986BA7 /* Build configuration list for PBXNativeTarget "BatteryAlertorTests" */;
+			buildConfigurationList = 473951C124488788006662B0 /* Build configuration list for PBXNativeTarget "BatteryAlertorTests" */;
 			buildPhases = (
-				47D4F22B24487B3800986BA7 /* Sources */,
-				47D4F22C24487B3800986BA7 /* Frameworks */,
-				47D4F22D24487B3800986BA7 /* Resources */,
+				473951A624488788006662B0 /* Sources */,
+				473951A724488788006662B0 /* Frameworks */,
+				473951A824488788006662B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				47D4F23124487B3800986BA7 /* PBXTargetDependency */,
+				473951AC24488788006662B0 /* PBXTargetDependency */,
 			);
 			name = BatteryAlertorTests;
 			productName = BatteryAlertorTests;
-			productReference = 47D4F22F24487B3800986BA7 /* BatteryAlertorTests.xctest */;
+			productReference = 473951AA24488788006662B0 /* BatteryAlertorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		47D4F23924487B3800986BA7 /* BatteryAlertorUITests */ = {
+		473951B424488788006662B0 /* BatteryAlertorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47D4F24924487B3800986BA7 /* Build configuration list for PBXNativeTarget "BatteryAlertorUITests" */;
+			buildConfigurationList = 473951C424488788006662B0 /* Build configuration list for PBXNativeTarget "BatteryAlertorUITests" */;
 			buildPhases = (
-				47D4F23624487B3800986BA7 /* Sources */,
-				47D4F23724487B3800986BA7 /* Frameworks */,
-				47D4F23824487B3800986BA7 /* Resources */,
+				473951B124488788006662B0 /* Sources */,
+				473951B224488788006662B0 /* Frameworks */,
+				473951B324488788006662B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				47D4F23C24487B3800986BA7 /* PBXTargetDependency */,
+				473951B724488788006662B0 /* PBXTargetDependency */,
 			);
 			name = BatteryAlertorUITests;
 			productName = BatteryAlertorUITests;
-			productReference = 47D4F23A24487B3800986BA7 /* BatteryAlertorUITests.xctest */;
+			productReference = 473951B524488788006662B0 /* BatteryAlertorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		47D4F21524487B3500986BA7 /* Project object */ = {
+		4739518D24488787006662B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Chil;
 				TargetAttributes = {
-					47D4F21C24487B3500986BA7 = {
+					4739519424488787006662B0 = {
 						CreatedOnToolsVersion = 11.4;
 					};
-					47D4F22E24487B3800986BA7 = {
+					473951A924488788006662B0 = {
 						CreatedOnToolsVersion = 11.4;
-						TestTargetID = 47D4F21C24487B3500986BA7;
+						TestTargetID = 4739519424488787006662B0;
 					};
-					47D4F23924487B3800986BA7 = {
+					473951B424488788006662B0 = {
 						CreatedOnToolsVersion = 11.4;
-						TestTargetID = 47D4F21C24487B3500986BA7;
+						TestTargetID = 4739519424488787006662B0;
 					};
 				};
 			};
-			buildConfigurationList = 47D4F21824487B3500986BA7 /* Build configuration list for PBXProject "BatteryAlertor" */;
+			buildConfigurationList = 4739519024488787006662B0 /* Build configuration list for PBXProject "BatteryAlertor" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -211,36 +228,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 47D4F21424487B3500986BA7;
-			productRefGroup = 47D4F21E24487B3500986BA7 /* Products */;
+			mainGroup = 4739518C24488787006662B0;
+			productRefGroup = 4739519624488787006662B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47D4F21C24487B3500986BA7 /* BatteryAlertor */,
-				47D4F22E24487B3800986BA7 /* BatteryAlertorTests */,
-				47D4F23924487B3800986BA7 /* BatteryAlertorUITests */,
+				4739519424488787006662B0 /* BatteryAlertor */,
+				473951A924488788006662B0 /* BatteryAlertorTests */,
+				473951B424488788006662B0 /* BatteryAlertorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		47D4F21B24487B3500986BA7 /* Resources */ = {
+		4739519324488787006662B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D4F22524487B3700986BA7 /* Assets.xcassets in Resources */,
-				47D4F22824487B3700986BA7 /* Main.storyboard in Resources */,
+				473951A324488788006662B0 /* Main.storyboard in Resources */,
+				473951A024488788006662B0 /* Preview Assets.xcassets in Resources */,
+				4739519D24488788006662B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D4F22D24487B3800986BA7 /* Resources */ = {
+		473951A824488788006662B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D4F23824487B3800986BA7 /* Resources */ = {
+		473951B324488788006662B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,51 +268,53 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		47D4F21924487B3500986BA7 /* Sources */ = {
+		4739519124488787006662B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D4F22324487B3500986BA7 /* ViewController.swift in Sources */,
-				47D4F22124487B3500986BA7 /* AppDelegate.swift in Sources */,
+				4739519B24488787006662B0 /* ContentView.swift in Sources */,
+				473951CA24488F4D006662B0 /* StudySwift.swift in Sources */,
+				4739519924488787006662B0 /* AppDelegate.swift in Sources */,
+				473951C8244888D1006662B0 /* EventController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D4F22B24487B3800986BA7 /* Sources */ = {
+		473951A624488788006662B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D4F23424487B3800986BA7 /* BatteryAlertorTests.swift in Sources */,
+				473951AF24488788006662B0 /* BatteryAlertorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D4F23624487B3800986BA7 /* Sources */ = {
+		473951B124488788006662B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D4F23F24487B3800986BA7 /* BatteryAlertorUITests.swift in Sources */,
+				473951BA24488788006662B0 /* BatteryAlertorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		47D4F23124487B3800986BA7 /* PBXTargetDependency */ = {
+		473951AC24488788006662B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 47D4F21C24487B3500986BA7 /* BatteryAlertor */;
-			targetProxy = 47D4F23024487B3800986BA7 /* PBXContainerItemProxy */;
+			target = 4739519424488787006662B0 /* BatteryAlertor */;
+			targetProxy = 473951AB24488788006662B0 /* PBXContainerItemProxy */;
 		};
-		47D4F23C24487B3800986BA7 /* PBXTargetDependency */ = {
+		473951B724488788006662B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 47D4F21C24487B3500986BA7 /* BatteryAlertor */;
-			targetProxy = 47D4F23B24487B3800986BA7 /* PBXContainerItemProxy */;
+			target = 4739519424488787006662B0 /* BatteryAlertor */;
+			targetProxy = 473951B624488788006662B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		47D4F22624487B3700986BA7 /* Main.storyboard */ = {
+		473951A124488788006662B0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				47D4F22724487B3700986BA7 /* Base */,
+				473951A224488788006662B0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -302,7 +322,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		47D4F24124487B3800986BA7 /* Debug */ = {
+		473951BC24488788006662B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -362,7 +382,7 @@
 			};
 			name = Debug;
 		};
-		47D4F24224487B3800986BA7 /* Release */ = {
+		473951BD24488788006662B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -415,43 +435,49 @@
 			};
 			name = Release;
 		};
-		47D4F24424487B3800986BA7 /* Debug */ = {
+		473951BF24488788006662B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BatteryAlertor/BatteryAlertor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryAlertor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BatteryAlertor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = DingChil.BatteryAlertor;
 				PRODUCT_NAME = "Battery Alertor";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		47D4F24524487B3800986BA7 /* Release */ = {
+		473951C024488788006662B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BatteryAlertor/BatteryAlertor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryAlertor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BatteryAlertor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = DingChil.BatteryAlertor;
 				PRODUCT_NAME = "Battery Alertor";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		47D4F24724487B3800986BA7 /* Debug */ = {
+		473951C224488788006662B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -472,7 +498,7 @@
 			};
 			name = Debug;
 		};
-		47D4F24824487B3800986BA7 /* Release */ = {
+		473951C324488788006662B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -493,7 +519,7 @@
 			};
 			name = Release;
 		};
-		47D4F24A24487B3800986BA7 /* Debug */ = {
+		473951C524488788006662B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -512,7 +538,7 @@
 			};
 			name = Debug;
 		};
-		47D4F24B24487B3800986BA7 /* Release */ = {
+		473951C624488788006662B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -534,43 +560,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47D4F21824487B3500986BA7 /* Build configuration list for PBXProject "BatteryAlertor" */ = {
+		4739519024488787006662B0 /* Build configuration list for PBXProject "BatteryAlertor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47D4F24124487B3800986BA7 /* Debug */,
-				47D4F24224487B3800986BA7 /* Release */,
+				473951BC24488788006662B0 /* Debug */,
+				473951BD24488788006662B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47D4F24324487B3800986BA7 /* Build configuration list for PBXNativeTarget "BatteryAlertor" */ = {
+		473951BE24488788006662B0 /* Build configuration list for PBXNativeTarget "BatteryAlertor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47D4F24424487B3800986BA7 /* Debug */,
-				47D4F24524487B3800986BA7 /* Release */,
+				473951BF24488788006662B0 /* Debug */,
+				473951C024488788006662B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47D4F24624487B3800986BA7 /* Build configuration list for PBXNativeTarget "BatteryAlertorTests" */ = {
+		473951C124488788006662B0 /* Build configuration list for PBXNativeTarget "BatteryAlertorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47D4F24724487B3800986BA7 /* Debug */,
-				47D4F24824487B3800986BA7 /* Release */,
+				473951C224488788006662B0 /* Debug */,
+				473951C324488788006662B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47D4F24924487B3800986BA7 /* Build configuration list for PBXNativeTarget "BatteryAlertorUITests" */ = {
+		473951C424488788006662B0 /* Build configuration list for PBXNativeTarget "BatteryAlertorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47D4F24A24487B3800986BA7 /* Debug */,
-				47D4F24B24487B3800986BA7 /* Release */,
+				473951C524488788006662B0 /* Debug */,
+				473951C624488788006662B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 47D4F21524487B3500986BA7 /* Project object */;
+	rootObject = 4739518D24488787006662B0 /* Project object */;
 }
