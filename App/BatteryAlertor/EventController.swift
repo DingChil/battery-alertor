@@ -10,13 +10,14 @@ import IOKit.ps
 import Foundation
 import UserNotifications
 
+// ~/Library/Developer/Xcode/DerivedData
 enum BatteryError: Error { case error }
 
 public class BatteryListener {
     // https://stackoverflow.com/questions/34571222
     // https://stackoverflow.com/questions/31633503
     public init() {
-        MCGCDTimer.shared.scheduledDispatchTimer(WithTimerName: "GCDTimer", timeInterval: 60, queue: .main, repeats: true) {
+        MCGCDTimer.shared.scheduledDispatchTimer(WithTimerName: "GCDTimer", timeInterval: 10, queue: .main, repeats: true) {
             //需要执行的代码
             self.start()
         }
@@ -51,7 +52,7 @@ public class BatteryListener {
                     print("\(name): \(capacity) of \(max)")
                 } */
                 if let name = info[kIOPSCurrentCapacityKey] as? Int {
-                    print("now is \(name)")
+                    print("The current percentage of electricity is: \(name) 🔋")
 //                    self.showNotification(level:name)
                     if (name > 90)
                     {self.notificationAction(level:name)}
