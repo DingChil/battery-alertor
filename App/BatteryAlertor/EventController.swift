@@ -45,10 +45,10 @@ public class BatteryListener {
                     else { throw BatteryError.error }
                 // Pull out the name and current capacity
                 /* if let name = info[kIOPSNameKey] as? String,
-                    let capacity = info[kIOPSCurrentCapacityKey] as? Int,
-                    let max = info[kIOPSMaxCapacityKey] as? Int {
-                    print("\(name): \(capacity) of \(max)")
-                } */
+                 let capacity = info[kIOPSCurrentCapacityKey] as? Int,
+                 let max = info[kIOPSMaxCapacityKey] as? Int {
+                 print("\(name): \(capacity) of \(max)")
+                 } */
                 if let name = info[kIOPSCurrentCapacityKey] as? Int {
                     print("The current percentage of electricity is: \(name) 🔋")
                     // self.showNotification(level:name)
