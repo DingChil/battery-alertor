@@ -64,8 +64,8 @@ public class BatteryListener {
     // https://zhuanlan.zhihu.com/p/59530670
     @IBAction func notificationAction(level:Int) {
         let content = UNMutableNotificationContent()
-        content.title = String(level)
-        content.body = String(level)
+        content.title = "\(String(level)) power left"
+        content.body = "Battery now at \(String(level))% 🔋🔌💡"
         content.userInfo = ["method": "new"]
         content.sound = UNNotificationSound.default
         content.categoryIdentifier = "NOTIFICATION_DEMO"
