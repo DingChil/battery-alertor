@@ -50,7 +50,7 @@ public class BatteryListener {
                  print("\(name): \(capacity) of \(max)")
                  } */
                 if let name = info[kIOPSCurrentCapacityKey] as? Int {
-                    print("The current percentage of electricity is: \(name) 🔋")
+                    print("The current percentage of electricity is: \(name)")
                     // self.showNotification(level:name)
                     if (name > 90)
                     {self.notificationAction(level:name)}
@@ -64,7 +64,7 @@ public class BatteryListener {
     // https://zhuanlan.zhihu.com/p/59530670
     @IBAction func notificationAction(level:Int) {
         let content = UNMutableNotificationContent()
-        content.title = "\(String(level)) power left"
+        content.title = "\(String(level)) power left ⚡️"
         content.body = "Battery now at \(String(level))% 🔋🔌💡"
         content.userInfo = ["method": "new"]
         content.sound = UNNotificationSound.default
