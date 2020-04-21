@@ -48,11 +48,17 @@ public class BatteryListener {
                  let capacity = info[kIOPSCurrentCapacityKey] as? Int,
                  let max = info[kIOPSMaxCapacityKey] as? Int {
                  print("\(name): \(capacity) of \(max)")
-                 } */
-                if let name = info[kIOPSCurrentCapacityKey] as? Int {
-                    print("The current percentage of electricity is: \(name)")
+                 }
+                 print(ps)
+                 print(info)
+                for (key, value) in info {
+                    print("\(key): \(value)")
+                }*/
+                if let name = info[kIOPSCurrentCapacityKey] as? Int,
+                    let type = (info[kIOPSIsChargingKey] as? Bool) {
+                    print("The current percentage of electricity is: \(name) ⛈ and cha state is \(type) 🌩")
                     // self.showNotification(level:name)
-                    if (name > 90)
+                    if (type && name > 90)
                     {self.notificationAction(level:name)}
                 }
             }
