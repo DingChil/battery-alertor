@@ -35,30 +35,18 @@ public class BatteryListener {
             // Pull out a list of power sources
             guard let sources: NSArray = IOPSCopyPowerSourcesList(snapshot)?.takeRetainedValue()
                 else { throw BatteryError.error }
-            // print(snapshot)
-            // print(type(of: sources[0]))
-            // print(sources[0])
             // For each power source...
             for ps in sources {
                 // Fetch the information for a given power source out of our snapshot
                 guard let info: NSDictionary = IOPSGetPowerSourceDescription(snapshot, ps as CFTypeRef)?.takeUnretainedValue()
                     else { throw BatteryError.error }
                 // Pull out the name and current capacity
-                /* if let name = info[kIOPSNameKey] as? String,
-                 let capacity = info[kIOPSCurrentCapacityKey] as? Int,
-                 let max = info[kIOPSMaxCapacityKey] as? Int {
-                 print("\(name): \(capacity) of \(max)")
-                 }
-                 print(ps)
-                 print(info)
-                for (key, value) in info {
-                    print("\(key): \(value)")
-                }*/
                 if let name = info[kIOPSCurrentCapacityKey] as? Int,
                     let type = (info[kIOPSIsChargingKey] as? Bool) {
                     print("The current percentage of electricity is: \(name) ⛈ and cha state is \(type) 🌩")
-                    // self.showNotification(level:name)
                     if (type && name > 90)
+                    {self.notificationAction(level:name)}
+                    if (name < 10)
                     {self.notificationAction(level:name)}
                 }
             }
