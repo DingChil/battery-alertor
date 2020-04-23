@@ -41,13 +41,13 @@ public class BatteryListener {
                 guard let info: NSDictionary = IOPSGetPowerSourceDescription(snapshot, ps as CFTypeRef)?.takeUnretainedValue()
                     else { throw BatteryError.error }
                 // Pull out the name and current capacity
-                if let name = info[kIOPSCurrentCapacityKey] as? Int,
+                if let name = info[kIOPSCurrentCapacityKey] as? Int,let stat = info[kIOPSPowerSourceStateKey] as? String,
                     let type = (info[kIOPSIsChargingKey] as? Bool) {
-                    print("The current percentage of electricity is: \(name) ⛈ and cha state is \(type) 🌩")
-                    if (type && name > 90)
-                    {self.notificationAction(level:name)}
-                    if (name < 10)
-                    {self.notificationAction(level:name)}
+                    print("⛈ The current percentage of electricity is: \(name), power source is useing \(stat) and charging state is \(type) 🌩")
+                    if (type && name >= 90)
+                    {self.notificationAction(level:name,title:"already 🔋⚡️",power:stat)}
+                    if (type == false && name <= 10)
+                    {self.notificationAction(level:name,title:"left 🔌💡",power:stat)}
                 }
             }
         } catch {
@@ -56,10 +56,10 @@ public class BatteryListener {
     }
     
     // https://zhuanlan.zhihu.com/p/59530670
-    @IBAction func notificationAction(level:Int) {
+    func notificationAction(level:Int, title:String, power:String) {
         let content = UNMutableNotificationContent()
-        content.title = "\(String(level)) power left ⚡️"
-        content.body = "Battery now at \(String(level))% 🔋🔌💡"
+        content.title = "\(String(level))% of electricity \(title)"
+        content.body = "Battery now at \(String(level)), Status is \(power)."
         content.userInfo = ["method": "new"]
         content.sound = UNNotificationSound.default
         content.categoryIdentifier = "NOTIFICATION_DEMO"
