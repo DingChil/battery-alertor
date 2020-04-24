@@ -87,6 +87,7 @@ public class BatteryListener {
 
 // https://www.jianshu.com/p/e20a4aca2c3f
 typealias ActionBlock = () -> ()
+
 class MCGCDTimer {
     //单例
     static let shared = MCGCDTimer()
