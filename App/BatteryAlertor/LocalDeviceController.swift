@@ -8,7 +8,6 @@
 
 import IOKit.ps
 import Foundation
-import CoreBluetooth
 import UserNotifications
 
 // ~/Library/Developer/Xcode/DerivedData
@@ -42,6 +41,7 @@ public class BatteryListener {
                 guard let info: NSDictionary = IOPSGetPowerSourceDescription(snapshot, ps as CFTypeRef)?.takeUnretainedValue()
                     else { throw BatteryError.error }
                 // Pull out the name and current capacity
+                print(info)
                 if let name = info[kIOPSCurrentCapacityKey] as? Int,let stat = info[kIOPSPowerSourceStateKey] as? String,
                     let type = (info[kIOPSIsChargingKey] as? Bool) {
                     print("⛈ The current percentage of electricity is: \(name), power source is useing \(stat) and charging state is \(type) 🌩")

@@ -14,8 +14,9 @@
 		473951A324488788006662B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473951A124488788006662B0 /* Main.storyboard */; };
 		473951AF24488788006662B0 /* BatteryAlertorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951AE24488788006662B0 /* BatteryAlertorTests.swift */; };
 		473951BA24488788006662B0 /* BatteryAlertorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951B924488788006662B0 /* BatteryAlertorUITests.swift */; };
-		473951C8244888D1006662B0 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951C7244888D1006662B0 /* EventController.swift */; };
+		473951C8244888D1006662B0 /* LocalDeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951C7244888D1006662B0 /* LocalDeviceController.swift */; };
 		473951CA24488F4D006662B0 /* StudySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473951C924488F4D006662B0 /* StudySwift.swift */; };
+		474BAF422455E6E900A77470 /* BluetoothDeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474BAF412455E6E900A77470 /* BluetoothDeviceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +51,9 @@
 		473951B524488788006662B0 /* BatteryAlertorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryAlertorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		473951B924488788006662B0 /* BatteryAlertorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertorUITests.swift; sourceTree = "<group>"; };
 		473951BB24488788006662B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		473951C7244888D1006662B0 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		473951C7244888D1006662B0 /* LocalDeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDeviceController.swift; sourceTree = "<group>"; };
 		473951C924488F4D006662B0 /* StudySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySwift.swift; sourceTree = "<group>"; };
+		474BAF412455E6E900A77470 /* BluetoothDeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDeviceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 				4739519824488787006662B0 /* AppDelegate.swift */,
 				4739519A24488787006662B0 /* ContentView.swift */,
 				473951C924488F4D006662B0 /* StudySwift.swift */,
-				473951C7244888D1006662B0 /* EventController.swift */,
+				473951C7244888D1006662B0 /* LocalDeviceController.swift */,
+				474BAF412455E6E900A77470 /* BluetoothDeviceController.swift */,
 				4739519C24488788006662B0 /* Assets.xcassets */,
 				473951A124488788006662B0 /* Main.storyboard */,
 				473951A424488788006662B0 /* Info.plist */,
@@ -275,7 +278,8 @@
 				4739519B24488787006662B0 /* ContentView.swift in Sources */,
 				473951CA24488F4D006662B0 /* StudySwift.swift in Sources */,
 				4739519924488787006662B0 /* AppDelegate.swift in Sources */,
-				473951C8244888D1006662B0 /* EventController.swift in Sources */,
+				474BAF422455E6E900A77470 /* BluetoothDeviceController.swift in Sources */,
+				473951C8244888D1006662B0 /* LocalDeviceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
