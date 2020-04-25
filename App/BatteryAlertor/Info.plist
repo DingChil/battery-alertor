@@ -32,5 +32,7 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>YES</string>
 </dict>
 </plist>

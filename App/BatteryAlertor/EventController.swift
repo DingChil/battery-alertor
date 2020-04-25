@@ -8,6 +8,7 @@
 
 import IOKit.ps
 import Foundation
+import CoreBluetooth
 import UserNotifications
 
 // ~/Library/Developer/Xcode/DerivedData
