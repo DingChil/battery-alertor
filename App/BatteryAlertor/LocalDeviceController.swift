@@ -9,6 +9,7 @@
 import IOKit.ps
 import Foundation
 import UserNotifications
+import OSLog
 
 // ~/Library/Developer/Xcode/DerivedData
 enum BatteryError: Error { case error }
@@ -44,7 +45,9 @@ public class BatteryListener {
                 print(info)
                 if let name = info[kIOPSCurrentCapacityKey] as? Int,let stat = info[kIOPSPowerSourceStateKey] as? String,
                     let type = (info[kIOPSIsChargingKey] as? Bool) {
-                    print("⛈ The current percentage of electricity is: \(name), power source is useing \(stat) and charging state is \(type) 🌩")
+                    let text: String = "⛈ The current percentage of electricity is: \(name), power source is useing \(stat) and charging state is \(type) 🌩"
+                    print(text)
+                    os_log("%@", text)
                     if (type && name >= 90)
                     {self.notificationAction(level:name,title:"already 🔋⚡️",power:stat)}
                     if (type == false && name <= 10)
