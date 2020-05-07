@@ -47,7 +47,7 @@ public class BatteryListener {
                     let type = (info[kIOPSIsChargingKey] as? Bool) {
                     let text: String = "⛈ The current percentage of electricity is: \(name), power source is useing \(stat) and charging state is \(type) 🌩"
                     print(text)
-                    os_log("%@", text)
+                    os_log("%{public}@", text)
                     if (type && name >= 90)
                     {self.notificationAction(level:name,title:"already 🔋⚡️",power:stat)}
                     if (type == false && name <= 10)
