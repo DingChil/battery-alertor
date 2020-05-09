@@ -14,6 +14,7 @@ import OSLog
 // ~/Library/Developer/Xcode/DerivedData
 enum BatteryError: Error { case error }
 
+// https://www.lordcodes.com/articles/clear-and-searchable-logging-in-swift-with-oslog
 extension OSLog {
     private static var subsystem = Bundle.main.bundleIdentifier!
     static let ba = OSLog(subsystem: subsystem, category: "Battery Alertor")
@@ -50,10 +51,10 @@ public class BatteryListener {
                 print(info)
                 if let name = info[kIOPSCurrentCapacityKey] as? Int,let stat = info[kIOPSPowerSourceStateKey] as? String,
                     let type = (info[kIOPSIsChargingKey] as? Bool) {
-                    let text: String = "⛈ The current percentage of electricity is: \(name), power source is useing \(stat) and charging state is \(type) 🌩"
+                    let text: String = "⛈ CurrentCapacity: \(name), PowerSourceState: \(stat), IsCharging: \(type) 🌩"
                     print(text)
-                    os_log("%{public}@", log: .ba, text)
-                    if (type && name >= 90)
+                    os_log("%{public}@", log: .ba, type: .info, text)
+                    if (type && name >= 95)
                     {self.notificationAction(level:name,title:"already 🔋⚡️",power:stat)}
                     if (type == false && name <= 10)
                     {self.notificationAction(level:name,title:"left 🔌💡",power:stat)}
