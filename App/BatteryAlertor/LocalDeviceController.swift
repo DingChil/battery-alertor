@@ -53,7 +53,7 @@ public class BatteryListener {
                     let type = (info[kIOPSIsChargingKey] as? Bool) {
                     let text: String = "⛈ CurrentCapacity: \(name), PowerSourceState: \(stat), IsCharging: \(type) 🌩"
                     print(text)
-                    os_log("%{public}@", log: .ba, type: .info, text)
+                    os_log("%{public}@", log: .ba, type: .default, text)
                     if (type && name >= 95)
                     {self.notificationAction(level:name,title:"already 🔋⚡️",power:stat)}
                     if (type == false && name <= 10)
@@ -68,8 +68,8 @@ public class BatteryListener {
     // https://zhuanlan.zhihu.com/p/59530670
     func notificationAction(level:Int, title:String, power:String) {
         let content = UNMutableNotificationContent()
-        content.title = "\(String(level))% of electricity \(title)"
-        content.body = "Battery now at \(String(level)), Status is \(power)."
+        content.title = "Battery now at \(String(level))."
+        content.body = "Using \(power), \(String(level))% of electricity \(title)"
         content.userInfo = ["method": "new"]
         content.sound = UNNotificationSound.default
         content.categoryIdentifier = "NOTIFICATION_DEMO"
