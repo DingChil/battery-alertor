@@ -55,9 +55,9 @@ public class BatteryListener {
                     print(text)
                     os_log("%{public}@", log: .ba, type: .default, text)
                     if (type && name >= 95)
-                    {self.notificationAction(level:name,title:"already 🔋⚡️",power:stat)}
+                    {self.notificationAction(level:name,title:"already 🔋⚡️", power:stat)}
                     if (type == false && name <= 10)
-                    {self.notificationAction(level:name,title:"left 🔌💡",power:stat)}
+                    {self.notificationAction(level:name,title:"left 🔌💡", power:stat)}
                 }
             }
         } catch {
@@ -73,8 +73,8 @@ public class BatteryListener {
         content.userInfo = ["method": "new"]
         content.sound = UNNotificationSound.default
         content.categoryIdentifier = "NOTIFICATION_DEMO"
-        let acceptAction = UNNotificationAction(identifier: "SHOW_ACTION", title: "显示", options: .init(rawValue: 0))
-        let declineAction = UNNotificationAction(identifier: "CLOSE_ACTION", title: "关闭", options: .init(rawValue: 0))
+        let acceptAction = UNNotificationAction(identifier: "SHOW_ACTION", title: "open", options: .init(rawValue: 0))
+        let declineAction = UNNotificationAction(identifier: "CLOSE_ACTION", title: "hide", options: .init(rawValue: 0))
         let testCategory = UNNotificationCategory(identifier: "NOTIFICATION_DEMO",
                                                   actions: [acceptAction, declineAction],
                                                   intentIdentifiers: [],
