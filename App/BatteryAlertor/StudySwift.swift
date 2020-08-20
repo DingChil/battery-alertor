@@ -5,31 +5,21 @@
 //  Created by Chil on 16/4/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-
-import Cocoa
-
-class StudySwift: NSAlert {
-
-}
-
-public class OutputFunction {
-    private var context: Any?
-    private let alert: String
-    private let count: Int
-    private let group: Array<String>
-    
-    public init() {
-        self.context = "Hello"
-        self.alert = "World"
-        self.count = 886
-        self.group = ["There", "is", "Battery Alertor"]
+class BatteryLearning {
+    init() {
         self.start()
     }
     
-    public func start() {
-        print(self.context as! String)
-        print(alert)
-        print("\(self.count)")
-        print(group)
+    func start() {
+        let π:Double = 3.14
+        var str:String
+        str = "Jiang Youhua"
+        let words = """
+        \(str) is a good person.
+        He is working very \
+        hard.
+        """
+        let num = 3+4
+        print(π, str, words, num)
     }
 }

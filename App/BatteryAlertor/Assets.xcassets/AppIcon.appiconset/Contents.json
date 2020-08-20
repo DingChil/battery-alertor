@@ -16,7 +16,6 @@
       "size" : "32x32"
     },
     {
-      "filename" : "app.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
@@ -47,6 +46,7 @@
       "size" : "512x512"
     },
     {
+      "filename" : "Bird (1).png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
