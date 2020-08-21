@@ -7,19 +7,29 @@
 //
 class BatteryLearning {
     init() {
-        self.start()
+        self.data()
     }
     
-    func start() {
-        let π:Double = 3.14
-        var str:String
-        str = "Jiang Youhua"
-        let words = """
-        \(str) is a good person.
+    func data() {
+        var usr:String
+        usr = "George"
+        let num:Double, str = """
+        \(usr) is a good person.
         He is working very \
         hard.
         """
-        let num = 3+4
-        print(π, str, words, num)
+        usr = "Andrew"
+        num = 0.0
+        print(usr, num, str)
+        for cur in 1...6 {
+            print(cur)
+        }
+        let arr:Array = ["Coco", "Alex"]
+        for val in arr {
+            print(val)
+        }
+        for val in stride(from: 0, through: 12, by: 4) {
+            print(val)
+        }
     }
 }
