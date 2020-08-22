@@ -21,15 +21,20 @@ class BatteryLearning {
         usr = "Andrew"
         num = 0.0
         print(usr, num, str)
-        for cur in 1...6 {
-            print(cur)
+        for val in 1...6 {
+            print(val)
         }
         let arr:Array = ["Coco", "Alex"]
         for val in arr {
             print(val)
         }
-        for val in stride(from: 0, through: 12, by: 4) {
-            print(val)
+    }
+    
+    func logic() {
+        var ref:Int = 0
+        let arr:Array = stride(from: 0, through: 12, by: 4)
+        while ref < 5 {
+            print(arr[ref])
         }
     }
 }
