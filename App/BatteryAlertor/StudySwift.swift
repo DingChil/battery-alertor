@@ -38,7 +38,9 @@ class BatteryLearning {
     
     func word() {
         let str = "A rolling stone gathers no moss."
-        print(str.count)
+        print("count \(str.count)")
+        print("isEmpty \(str.isEmpty)")
+        print("contains \(str.contains("stone")) \(str.contains("stomp"))")
     }
     
     func logic() {
