@@ -28,8 +28,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)*/
-        _ = BatteryLearning.init()
-        // _ = BatteryListener.init()
+        // _ = BatteryLearning.init()
+         _ = BatteryListener.init()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
