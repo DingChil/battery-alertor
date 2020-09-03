@@ -41,6 +41,8 @@ class BatteryLearning {
         print("count \(str.count)")
         print("isEmpty \(str.isEmpty)")
         print("contains \(str.contains("stone")) \(str.contains("stomp"))")
+        print("split \(str.split(separator: " "))")
+        print("startIndex \(str.startIndex) index \(str.index(str.startIndex, offsetBy: 3))")
     }
     
     func logic() {
