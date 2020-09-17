@@ -11,8 +11,8 @@
 
 class BatteryLearning {
     init() {
-//        self.basic()
-        self.word()
+        self.basic()
+//        self.word()
 //        self.logic()
     }
     
@@ -38,11 +38,12 @@ class BatteryLearning {
     
     func word() {
         let str = "A rolling stone gathers no moss."
-        print("count \(str.count)")
-        print("isEmpty \(str.isEmpty)")
+        print("count \(str.count) isEmpty \(str.isEmpty) split \(str.split(separator: " "))")
         print("contains \(str.contains("stone")) \(str.contains("stomp"))")
-        print("split \(str.split(separator: " "))")
-        print("startIndex \(str.startIndex) index \(str.index(str.startIndex, offsetBy: 3))")
+//        print("startIndex \(str.startIndex) index \(str.index(str.startIndex, offsetBy: 3))")
+        let ran:Range = str.range(of: "no")!
+//        print("range \(str.range(of: "no")) range \(ran)")
+        print("distance \(str.distance(from: str.startIndex, to: ran.lowerBound)) lowerBound \(ran.lowerBound)")
     }
     
     func logic() {
