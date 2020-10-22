@@ -19,7 +19,7 @@ class BatteryLearning {
     func basic() {
         var usr:String
         usr = "George"
-        let num:Double, str = """
+        let num:Double, tmp=0b10001,str = """
         \(usr) is a good person.
         He is working very \
         hard.
@@ -28,6 +28,12 @@ class BatteryLearning {
         num = 0.0
         print(usr, num, str)
         print("UInt8:\(UInt8.min)~\(UInt8.max) Int:\(Int.min)~\(Int.max) UInt:\(UInt.min)~\(UInt.max)")
+        print("Transfer UInt16:\(UInt16(tmp)) UInt:\(UInt(tmp)) Double\(Double(tmp)) Float\(Float(tmp))")
+        print("Bool \(0o21==0x11) \(tmp==0x12)")
+        typealias Content = String
+        let txt:Content = "Tuple: \((404, "Not Found"))"
+        print(txt)
+
         for val in 1...6 {
             print(val)
         }
