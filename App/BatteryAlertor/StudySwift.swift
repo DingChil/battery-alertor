@@ -12,8 +12,8 @@
 class BatteryLearning {
     init() {
         self.basic()
-//        self.word()
-//        self.logic()
+        //        self.word()
+        //        self.logic()
     }
     
     func basic() {
@@ -31,16 +31,18 @@ class BatteryLearning {
         print("Transfer UInt16:\(UInt16(tmp)) UInt:\(UInt(tmp)) Double\(Double(tmp)) Float\(Float(tmp))")
         print("Bool \(0o21==0x11) \(tmp==0x12)")
         typealias Content = String
-        let txt:Content = "Tuple: \((404, "Not Found"))"
-        print(txt)
-
-        for val in 1...6 {
-            print(val)
+        var txt:Content = "Tuple: \((404, "Not Found"))", not:Int? = 404
+        if not != nil
+        {print(txt, not!)}
+        not = nil
+        if not != nil
+        {print(not!)}
+        
+        for val in 1...6 {print(val)
         }
         let arr:Array = ["Coco", "Alex"]
         for tmp in arr {
-            print(tmp)
-        }
+            print(tmp)}
         let group = (1,"2")
         print(group)
     }
@@ -49,18 +51,18 @@ class BatteryLearning {
         let str = "A rolling stone gathers no moss."
         print("count \(str.count) isEmpty \(str.isEmpty) split \(str.split(separator: " "))")
         print("contains \(str.contains("stone")) \(str.contains("stomp"))")
-//        print("startIndex \(str.startIndex) index \(str.index(str.startIndex, offsetBy: 3))")
+        //        print("startIndex \(str.startIndex) index \(str.index(str.startIndex, offsetBy: 3))")
         let ran:Range = str.range(of: "no")!
-//        print("range \(str.range(of: "no")) range \(ran)")
+        //        print("range \(str.range(of: "no")) range \(ran)")
         print("distance \(str.distance(from: str.startIndex, to: ran.lowerBound)) lowerBound \(ran.lowerBound)")
     }
     
     func logic() {
-//        print(stride(from: 0, through: 12, by: 4))
-//        var ref:Int = 0
-//        let arr:Array = stride(from: 0, through: 12, by: 4)
-//        while ref < 5 {
-//            print(arr[ref])
-//        }
+        //        print(stride(from: 0, through: 12, by: 4))
+        //        var ref:Int = 0
+        //        let arr:Array = stride(from: 0, through: 12, by: 4)
+        //        while ref < 5 {
+        //            print(arr[ref])
+        //        }
     }
 }
