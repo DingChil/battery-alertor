@@ -17,26 +17,27 @@ class BatteryLearning {
     }
     
     func basic() {
-        var usr:String
+        var usr:String, par = "321"
         usr = "George"
-        let num:Double, tmp=0b10001,str = """
+        let num:Double, tmp=0b10001, str = """
         \(usr) is a good person.
         He is working very \
         hard.
         """
         usr = "Andrew"
         num = 0.0
-        print(usr, num, str)
-        print("UInt8:\(UInt8.min)~\(UInt8.max) Int:\(Int.min)~\(Int.max) UInt:\(UInt.min)~\(UInt.max)")
-        print("Transfer UInt16:\(UInt16(tmp)) UInt:\(UInt(tmp)) Double\(Double(tmp)) Float\(Float(tmp))")
-        print("Bool \(0o21==0x11) \(tmp==0x12)")
+        print("Sting&Double",usr, str, num, Int(num))
+        print("UInt8:\(UInt8.min)~\(UInt8.max), Int:\(Int.min)~\(Int.max), UInt:\(UInt.min)~\(UInt.max)")
+        print("Transfer UInt16:\(UInt16(tmp)), UInt:\(UInt(tmp)), Double:\(Double(tmp)), Float:\(Float(tmp))")
+        print("Bool:\(0o21==0x11) \(tmp==0x12)")
         typealias Content = String
         var txt:Content = "Tuple: \((404, "Not Found"))", not:Int? = 404
         if not != nil
-        {print(txt, not!)}
+        {print("typealias:\(txt), optional Int:\(not!)")}
         not = nil
-        if not != nil
-        {print(not!)}
+        if  not == nil, let exp = Int(par){
+            print("Force expand:\(exp)")
+        }
         
         for val in 1...6 {print(val)
         }
