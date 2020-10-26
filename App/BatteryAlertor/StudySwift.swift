@@ -12,8 +12,8 @@
 class BatteryLearning {
     init() {
         self.basic()
-        //        self.word()
-        //        self.logic()
+        // self.word()
+        self.logic()
     }
     
     func basic() {
@@ -32,10 +32,11 @@ class BatteryLearning {
         print("Bool:\(0o21==0x11) \(tmp==0x12)")
         typealias Content = String
         var txt:Content = "Tuple: \((404, "Not Found"))", not:Int? = 404
-        if not != nil
-        {print("typealias:\(txt), optional Int:\(not!)")}
+        if not != nil {
+            print("typealias:\(txt), optional Int:\(not!)")
+        }
         not = nil
-        if  not == nil, let exp = Int(par){
+        if  not == nil, let exp = Int(par) {
             print("Force expand:\(exp)")
         }
         
@@ -59,11 +60,12 @@ class BatteryLearning {
     }
     
     func logic() {
-        //        print(stride(from: 0, through: 12, by: 4))
-        //        var ref:Int = 0
-        //        let arr:Array = stride(from: 0, through: 12, by: 4)
-        //        while ref < 5 {
-        //            print(arr[ref])
-        //        }
+        func canThrowAnError() throws {
+            print("canThrowAnError")
+        }
+        do {
+            try canThrowAnError()
+        } catch {
+        }
     }
 }
