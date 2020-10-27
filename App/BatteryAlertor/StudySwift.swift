@@ -60,12 +60,15 @@ class BatteryLearning {
     }
     
     func logic() {
-        func canThrowAnError() throws {
-            print("canThrowAnError")
+        let age = -3
+        assert(age >= 0, "🌞🌚")
+        func throwError() throws {
+            print("try")
         }
         do {
-            try canThrowAnError()
+            try throwError()
         } catch {
+            print("catch")
         }
     }
 }
