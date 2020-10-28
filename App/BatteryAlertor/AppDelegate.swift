@@ -28,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)*/
-        _ = BatteryLearning.init()
+        _ = SwiftGG.init()
         // _ = BatteryListener.init()
     }
 

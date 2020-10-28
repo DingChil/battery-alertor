@@ -1,5 +1,5 @@
 //
-//  StudySwift.swift
+//  SwiftCN.swift
 //  BatteryAlertor
 //
 //  Created by Chil on 16/4/20.
@@ -9,7 +9,7 @@
 //  https://www.cnswift.org/the-basics
 //
 
-class BatteryLearning {
+class SwiftCN {
     init() {
         self.basic()
         // self.word()
