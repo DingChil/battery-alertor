@@ -12,5 +12,10 @@ class SwiftGG {
     init() {
         self.basic()
     }
-    func basic() {}
+    func basic() {
+        let binaryInteger = 0b10001, octalInteger = 0o21, hexadecimalInteger = 0x11
+        print("binaryInteger:\(binaryInteger), octalInteger:\(octalInteger), hexadecimalInteger:\(hexadecimalInteger)")
+        let decimalDouble = 12.18750000, exponentDouble = 1.21875e1, hexadecimalDouble = 0xC.3p0
+        print("always Double no Float:\(decimalDouble), exponentDouble:\(exponentDouble), hexadecimalDouble:\(hexadecimalDouble)")
+    }
 }
