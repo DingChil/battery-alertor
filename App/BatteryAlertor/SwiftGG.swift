@@ -20,7 +20,9 @@ class SwiftGG {
         let paddedDouble = 000123.456, oneMillion = 1_000_000, justOverOneMillion = 1_000_000.000_000_1
         print("paddedDouble:\(paddedDouble), oneMillion:\(oneMillion), justOverOneMillion:\(justOverOneMillion)")
         typealias AudioSample = UInt16
-        var maxAmplitudeFound = AudioSample.min
+        let maxAmplitudeFound = AudioSample.min
         print("UInt16 min:\(maxAmplitudeFound), max:\(AudioSample.max)")
+        let http404Error = (404, "Not Found")
+        print("tuples http404Error.0:\(http404Error.0), http404Error.1:\(http404Error.1), http404Error:\(http404Error)")
     }
 }
