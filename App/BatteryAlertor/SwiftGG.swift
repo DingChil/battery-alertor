@@ -19,5 +19,8 @@ class SwiftGG {
         print("always Double no Float:\(decimalDouble), exponentDouble:\(exponentDouble), hexadecimalDouble:\(hexadecimalDouble)")
         let paddedDouble = 000123.456, oneMillion = 1_000_000, justOverOneMillion = 1_000_000.000_000_1
         print("paddedDouble:\(paddedDouble), oneMillion:\(oneMillion), justOverOneMillion:\(justOverOneMillion)")
+        typealias AudioSample = UInt16
+        var maxAmplitudeFound = AudioSample.min
+        print("UInt16 min:\(maxAmplitudeFound), max:\(AudioSample.max)")
     }
 }
