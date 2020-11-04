@@ -24,6 +24,8 @@ class SwiftGG {
         print("UInt16 min:\(maxAmplitudeFound), max:\(AudioSample.max)")
         let http404Error = (404, "Not Found")
         print("tuples http404Error.0:\(http404Error.0), http404Error.1:\(http404Error.1), http404Error:\(http404Error)")
-        print("optionals \(Int("123")!)")
+        var serverResponseCode: Int? = 404
+        print("optionals \(Int("123")!) \(serverResponseCode!)")
+        serverResponseCode = nil
     }
 }
