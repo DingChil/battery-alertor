@@ -25,7 +25,7 @@ class SwiftGG {
         let http404Error = (404, "Not Found")
         print("tuples http404Error.0:\(http404Error.0), http404Error.1:\(http404Error.1), http404Error:\(http404Error)")
         var serverResponseCode: String? = "456"
-        print("optionals \(Int(serverResponseCode!)) \(serverResponseCode!)")
+        print("optionals \(serverResponseCode as Optional) \(serverResponseCode!)")
         serverResponseCode = "123"
         if let actualNumber = Int(serverResponseCode!) {
             print("\'\(serverResponseCode!)\' has an integer value of \(actualNumber)")
