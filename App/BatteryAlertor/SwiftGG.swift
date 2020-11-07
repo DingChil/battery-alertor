@@ -24,13 +24,13 @@ class SwiftGG {
         print("UInt16 min:\(maxAmplitudeFound), max:\(AudioSample.max)")
         let http404Error = (404, "Not Found")
         print("tuples http404Error.0:\(http404Error.0), http404Error.1:\(http404Error.1), http404Error:\(http404Error)")
-        var serverResponseCode: String? = "456"
-        print("optionals \(serverResponseCode as Optional) \(serverResponseCode!)")
-        serverResponseCode = "123"
+        var serverResponseCode: String?
+        print("optionals \(serverResponseCode as Optional)")
+        serverResponseCode = "1234"
         if let actualNumber = Int(serverResponseCode!) {
-            print("\'\(serverResponseCode!)\' has an integer value of \(actualNumber)")
+            print("\(serverResponseCode!) & \(serverResponseCode as Optional) has an integer value of \(actualNumber)")
         } else {
-            print("\'\(serverResponseCode!)\' could not be converted to an integer")
+            print("\(serverResponseCode!) & \(serverResponseCode as Optional) could not be converted to an integer")
         }
     }
 }
