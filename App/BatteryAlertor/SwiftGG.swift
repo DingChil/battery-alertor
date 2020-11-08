@@ -32,5 +32,7 @@ class SwiftGG {
         } else {
             print("\(serverResponseCode!) & \(serverResponseCode as Optional) could not be converted to an integer")
         }
+        let forcedString:String = serverResponseCode!
+        print("implicitly unwrapped optionals \(forcedString)")
     }
 }
