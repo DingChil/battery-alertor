@@ -5,7 +5,7 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics#implicityly-unwrapped-optionals
 //
 
 class SwiftGG {
@@ -32,7 +32,7 @@ class SwiftGG {
         } else {
             print("\(serverResponseCode!) & \(serverResponseCode as Optional) could not be converted to an integer")
         }
-        let forcedString:String = serverResponseCode!
-        print("implicitly unwrapped optionals \(forcedString)")
+        let forcedString:String! = serverResponseCode
+        print("implicitly unwrapped optionals \(forcedString!) \(forcedString as Optional)")
     }
 }
