@@ -10,7 +10,8 @@
 
 class SwiftGG {
     init() {
-        self.basic()
+        // self.basic()
+        self.logic()
     }
     func basic() {
         let binaryInteger = 0b10001, octalInteger = 0o21, hexadecimalInteger = 0x11
@@ -34,5 +35,16 @@ class SwiftGG {
         }
         let forcedString:String! = serverResponseCode
         print("implicitly unwrapped optionals \(forcedString!) \(forcedString as Optional)")
+    }
+    func logic() {
+        func canThrowAnError() throws {
+            print("error")
+        }
+        do {
+            try canThrowAnError()
+            print("done")
+        } catch {
+            print("catch")
+        }
     }
 }
