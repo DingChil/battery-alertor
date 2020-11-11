@@ -10,7 +10,7 @@
 
 class SwiftGG {
     init() {
-        // self.basic()
+         self.basic()
         self.logic()
     }
     func basic() {
@@ -35,16 +35,16 @@ class SwiftGG {
         }
         let forcedString:String! = serverResponseCode
         print("implicitly unwrapped optionals \(forcedString!) \(forcedString as Optional)")
+            func canThrowAnError() throws {
+                print("error")
+            }
+            do {
+                try canThrowAnError()
+                print("done")
+            } catch {
+                print("catch")
+            }
     }
     func logic() {
-        func canThrowAnError() throws {
-            print("error")
-        }
-        do {
-            try canThrowAnError()
-            print("done")
-        } catch {
-            print("catch")
-        }
     }
 }
