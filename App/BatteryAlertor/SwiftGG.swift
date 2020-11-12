@@ -5,12 +5,12 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics#error-handling
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics#enforcing-preconditions
 //
 
 class SwiftGG {
     init() {
-         self.basic()
+        // self.basic()
         self.logic()
     }
     func basic() {
@@ -46,5 +46,11 @@ class SwiftGG {
             }
     }
     func logic() {
+        let age = -3
+        if age > 0 {
+            assert(age >= 0, "A person's age cannot be less than zero")
+        } else {
+            assertionFailure("A person's age can't be less than zero.")
+        }
     }
 }
