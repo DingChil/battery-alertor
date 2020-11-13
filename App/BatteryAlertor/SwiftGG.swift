@@ -47,8 +47,9 @@ class SwiftGG {
     }
     func logic() {
         let age = -3
+        precondition(age <= 0, "Index must be greater than zero.")
         if age > 0 {
-            assert(age >= 0, "A person's age cannot be less than zero")
+            assert(age > 0, "A person's age cannot be less than zero")
         } else {
             assertionFailure("A person's age can't be less than zero.")
         }
