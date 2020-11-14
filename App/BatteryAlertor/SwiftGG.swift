@@ -5,13 +5,14 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/01_the_basics#enforcing-preconditions
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#compound-assignment-operators
 //
 
 class SwiftGG {
     init() {
         // self.basic()
-        self.logic()
+        // self.error()
+        self.symbol()
     }
     func basic() {
         let binaryInteger = 0b10001, octalInteger = 0o21, hexadecimalInteger = 0x11
@@ -45,7 +46,7 @@ class SwiftGG {
                 print("catch")
             }
     }
-    func logic() {
+    func error() {
         let age = -3
         precondition(age <= 0, "Index must be greater than zero.")
         if age > 0 {
@@ -53,5 +54,9 @@ class SwiftGG {
         } else {
             assertionFailure("A person's age can't be less than zero.")
         }
+    }
+    func symbol() {
+        let (x, y) = (1.0, 2)
+        print("x:\(x), y:\(-y)")
     }
 }
