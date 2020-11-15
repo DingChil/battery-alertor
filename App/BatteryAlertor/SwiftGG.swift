@@ -5,7 +5,7 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#compound-assignment-operators
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#nil-coalescing-operator
 //
 
 class SwiftGG {
@@ -57,6 +57,8 @@ class SwiftGG {
     }
     func symbol() {
         let (x, y) = (1.0, 2)
-        print("x:\(x), y:\(-y)")
+        var z:Int?, nonnil = z ?? y
+        z = 3
+        print("x:\(x), y:\(-y), 'x!=nil?a!:b':\(nonnil)")
     }
 }
