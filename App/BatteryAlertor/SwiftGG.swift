@@ -5,7 +5,7 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#nil-coalescing-operator
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#range-operators
 //
 
 class SwiftGG {
@@ -60,5 +60,8 @@ class SwiftGG {
         var z:Int?, nonnil = z ?? y
         z = 3
         print("x:\(x), y:\(-y), 'x!=nil?a!:b':\(nonnil)")
+        for index in 1...5 {
+            print("\(index) * 5 = \(index * 5)")
+        }
     }
 }
