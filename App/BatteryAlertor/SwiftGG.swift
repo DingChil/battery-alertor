@@ -15,13 +15,18 @@ class SwiftGG {
         self.symbol()
     }
     func basic() {
+        // 可以直接用二进制、八进制和十六进制的整数类型
         let binaryInteger = 0b10001, octalInteger = 0o21, hexadecimalInteger = 0x11
         print("binaryInteger:\(binaryInteger), octalInteger:\(octalInteger), hexadecimalInteger:\(hexadecimalInteger)")
+        // 十进制指数小数和十六进制浮点数
         let decimalDouble = 12.18750000, exponentDouble = 1.21875e1, hexadecimalDouble = 0xC.3p0
         print("always Double no Float:\(decimalDouble), exponentDouble:\(exponentDouble), hexadecimalDouble:\(hexadecimalDouble)")
+        // 带格式的数值类字面量
         let paddedDouble = 000123.456, oneMillion = 1_000_000, justOverOneMillion = 1_000_000.000_000_1
         print("paddedDouble:\(paddedDouble), oneMillion:\(oneMillion), justOverOneMillion:\(justOverOneMillion)")
+        // let 声明最好是注明类型和赋值，赋值后不能改。var 可以不写名类型，可以不赋值，赋值后可以改变内容
         typealias AudioSample = UInt16
+        // 类型别名
         let maxAmplitudeFound = AudioSample.min
         print("UInt16 min:\(maxAmplitudeFound), max:\(AudioSample.max)")
         let http404Error = (404, "Not Found")
