@@ -10,9 +10,9 @@
 
 class SwiftGG {
     init() {
-        // self.basic()
+         self.basic()
         // self.error()
-        self.symbol()
+        // self.symbol()
     }
     func basic() {
         // 可以直接用二进制、八进制和十六进制的整数类型
@@ -26,30 +26,34 @@ class SwiftGG {
         print("paddedDouble:\(paddedDouble), oneMillion:\(oneMillion), justOverOneMillion:\(justOverOneMillion)")
         // let 声明最好是注明类型和赋值，赋值后不能改。var 可以不写名类型，可以不赋值，赋值后可以改变内容
         typealias AudioSample = UInt16
-        // 类型别名
+        // 类型别名，最大最小安全数值
         let maxAmplitudeFound = AudioSample.min
         print("UInt16 min:\(maxAmplitudeFound), max:\(AudioSample.max)")
+        // 元组，用下标读取具体值
         let http404Error = (404, "Not Found")
         print("tuples http404Error.0:\(http404Error.0), http404Error.1:\(http404Error.1), http404Error:\(http404Error)")
+        // 可选类型，默认是 nil ，不能直接打印
         var serverResponseCode: String?
         print("optionals \(serverResponseCode as Optional)")
         serverResponseCode = "1234"
+        // if 条件的可选绑定
         if let actualNumber = Int(serverResponseCode!) {
             print("\(serverResponseCode!) & \(serverResponseCode as Optional) has an integer value of \(actualNumber)")
         } else {
             print("\(serverResponseCode!) & \(serverResponseCode as Optional) could not be converted to an integer")
         }
+        // 强制输出可选类型
         let forcedString:String! = serverResponseCode
         print("implicitly unwrapped optionals \(forcedString!) \(forcedString as Optional)")
-            func canThrowAnError() throws {
-                print("error")
-            }
-            do {
-                try canThrowAnError()
-                print("done")
-            } catch {
-                print("catch")
-            }
+        func canThrowAnError() throws {
+            print("error")
+        }
+        do {
+            try canThrowAnError()
+            print("done")
+        } catch {
+            print("catch")
+        }
     }
     func error() {
         let age = -3
