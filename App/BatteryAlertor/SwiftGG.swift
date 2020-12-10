@@ -45,6 +45,7 @@ class SwiftGG {
         // 强制输出可选类型
         let forcedString:String! = serverResponseCode
         print("implicitly unwrapped optionals \(forcedString!) \(forcedString as Optional)")
+        // 自定义错误提示
         func canThrowAnError() throws {
             print("error")
         }
@@ -56,6 +57,7 @@ class SwiftGG {
         }
     }
     func error() {
+        // 先决条件、断言和断言失败
         let age = -3
         precondition(age <= 0, "Index must be greater than zero.")
         if age > 0 {
