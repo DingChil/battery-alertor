@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import BatteryAlertor
+//@testable import BatteryAlertor
 
 class BatteryAlertorTests: XCTestCase {
 
