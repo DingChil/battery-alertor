@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)*/
         _ = SwiftGG.init()
-//        _ = BatteryListener.init()
+        // _ = BatteryListener.init()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

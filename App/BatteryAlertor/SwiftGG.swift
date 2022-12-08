@@ -6,6 +6,8 @@
 //  Copyright © 2020 Chil. All rights reserved.
 //
 //  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#range-operators
+//  https://www.fatbobman.com/posts/turorials_for_SwiftUI_beginners/
+//  https://wangchujiang.com/reference/docs/swiftui.html
 //
 
 class SwiftGG {
