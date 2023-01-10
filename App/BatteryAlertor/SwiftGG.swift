@@ -12,8 +12,8 @@
 
 class SwiftGG {
     init() {
-         self.basic()
-        // self.error()
+//         self.basic()
+         self.error()
         // self.symbol()
     }
     func basic() {
@@ -59,9 +59,12 @@ class SwiftGG {
         }
     }
     func error() {
-        // 先决条件、断言和断言失败
+        // 先决条件、断言和断言失败，用于断点，区别在于调试用、生产用和调试一定失败用
         let age = -3
-        precondition(age <= 0, "Index must be greater than zero.")
+        precondition(age <= 0, "Index must be less than or equal to zero.")
+//        precondition(age > 0, "Index must be greater than zero.")
+        assert(age <= 0, "Index must be less than or equal to zero.")
+//        assert(age > 0, "Index must be greater than zero.")
         if age > 0 {
             assert(age > 0, "A person's age cannot be less than zero")
         } else {
