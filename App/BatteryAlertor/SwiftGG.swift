@@ -12,9 +12,11 @@
 
 class SwiftGG {
     init() {
-//         self.basic()
-         self.error()
-        // self.symbol()
+//        self.basic()
+//        self.error()
+//        self.symbol()
+        self.operators()
+         
     }
     func basic() {
         // 可以直接用二进制、八进制和十六进制的整数类型
@@ -62,9 +64,9 @@ class SwiftGG {
         // 先决条件、断言和断言失败，用于断点，区别在于调试用、生产用和调试一定失败用
         let age = -3
         precondition(age <= 0, "Index must be less than or equal to zero.")
-//        precondition(age > 0, "Index must be greater than zero.")
+        // precondition(age > 0, "Index must be greater than zero.")
         assert(age <= 0, "Index must be less than or equal to zero.")
-//        assert(age > 0, "Index must be greater than zero.")
+        // assert(age > 0, "Index must be greater than zero.")
         if age > 0 {
             assert(age > 0, "A person's age cannot be less than zero")
         } else {
@@ -78,6 +80,12 @@ class SwiftGG {
         print("x:\(x), y:\(-y), 'x!=nil?a!:b':\(nonnil)")
         for index in 1...5 {
             print("\(index) * 5 = \(index * 5)")
+        }
+    }
+    func operators() {
+        // 闭区间运算符
+        for index in 1...9 {
+            print("\(index) * 9 = \(index * 9)")
         }
     }
 }
