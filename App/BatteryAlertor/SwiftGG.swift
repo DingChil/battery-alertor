@@ -5,7 +5,7 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#range-operators
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#half-open-range-operator
 //  https://www.fatbobman.com/posts/turorials_for_SwiftUI_beginners/
 //  https://wangchujiang.com/reference/docs/swiftui.html
 //
@@ -86,6 +86,12 @@ class SwiftGG {
         // 闭区间运算符
         for index in 1...9 {
             print("\(index) * 9 = \(index * 9)")
+        }
+        // 半开区间运算符
+        let names = ["andrew", "chil", "alphonse", "george"]
+        let count = names.count
+        for i in 0..<count {
+            print("第 \(i + 1) 个人叫 \(names[i])")
         }
     }
 }
