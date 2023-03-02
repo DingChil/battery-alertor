@@ -88,10 +88,16 @@ class SwiftGG {
             print("\(index) * 9 = \(index * 9)")
         }
         // 半开区间运算符
-        let names = ["andrew", "chil", "alphonse", "george"]
-        let count = names.count
-        for i in 0..<count {
-            print("第 \(i + 1) 个人叫 \(names[i])")
+        let list = ["andrew", "chil", "alphonse", "george", "dc"]
+        let count = list.count
+        for i in list[2...] {
+            print(i)
+        }
+        for i in 1..<count {
+            print("\(i) \(list[i])")
+        }
+        for i in list[..<3] {
+            print(i)
         }
     }
 }
