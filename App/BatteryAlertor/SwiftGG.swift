@@ -5,7 +5,7 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/02_basic_operators#nil-coalescing-operator
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters
 //
 
 class SwiftGG {
@@ -74,9 +74,10 @@ class SwiftGG {
         let (x, y) = (1.0, 2)
         // 空合运算符
         var z:Int?, w = z ?? y
+        let v = z != nil ? z! : y
         // 三元运算符
         z = Int(x) < y ? Int(-x) * 3 : -y * 2
-        print("x \(x), y \(y), x<y?-x*3:-y*2 \(z as Int?), z??y \(w)")
+        print("x \(x), y \(y), x<y?-x*3:-y*2 \(z as Int?), z??y \(w as Int), z!=nil?z!:y \(v as Int)")
         // 闭区间运算符
         for index in 1...9 {
             print("\(index) * 9 = \(index * 9)")
