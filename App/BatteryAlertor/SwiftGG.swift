@@ -5,14 +5,15 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#special-characters-in-string-literals
 //
 
 class SwiftGG {
     init() {
 //        self.basic()
 //        self.error()
-        self.operators()
+//        self.operators()
+        self.characters()
          
     }
     func basic() {
@@ -98,5 +99,12 @@ class SwiftGG {
         // 逻辑运算符
         let origin = true
         print("\(list.isEmpty) \(!list.isEmpty) \(origin&&list.isEmpty) \(list.isEmpty||origin)")
+    }
+    func characters() {
+        let str = """
+        everything is beginning from now
+        and you?
+        """
+        print(str)
     }
 }
