@@ -5,7 +5,7 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#special-characters-in-string-literals
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#extended-string-delimiters
 //
 
 class SwiftGG {
@@ -102,8 +102,12 @@ class SwiftGG {
     }
     func characters() {
         let str = """
-        everything is beginning from now
-        and you?
+        let me
+         test some
+        special characters
+            such as\
+         the \\backslash, warp\n, and quotes \"\"\" or \' and
+        Unicode \u{24} \u{2665} \u{1F496}
         """
         print(str)
     }
