@@ -5,7 +5,7 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#extended-string-delimiters
+//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#string-mutability
 //
 
 class SwiftGG {
@@ -101,7 +101,7 @@ class SwiftGG {
         print("\(list.isEmpty) \(!list.isEmpty) \(origin&&list.isEmpty) \(list.isEmpty||origin)")
     }
     func characters() {
-        let str = """
+        let str1 = """
         let me
          test some
         special characters
@@ -109,6 +109,12 @@ class SwiftGG {
          the \\backslash, warp\n, and quotes \"\"\" or \' and
         Unicode \u{24} \u{2665} \u{1F496}
         """
-        print(str)
+        print(str1)
+        var str2 = String()
+        str2 = #"""
+        or this """
+        """#
+        str2 += "?"
+        print(str2)
     }
 }
