@@ -5,7 +5,6 @@
 //  Created by Chil on 28/10/20.
 //  Copyright © 2020 Chil. All rights reserved.
 //
-//  https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#string-mutability
 //
 
 class SwiftGG {
@@ -112,9 +111,15 @@ class SwiftGG {
         print(str1)
         var str2 = String()
         str2 = #"""
-        or this """
+        🧐"""3⃣️
         """#
-        str2 += "?"
-        print(str2)
+        let str3 = ""
+        if str3.isEmpty {
+            str2 += "?"
+            for character in str2 {
+                print(character)
+            }
+        }
     }
 }
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#working-with-characters
