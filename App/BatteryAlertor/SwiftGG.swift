@@ -120,6 +120,9 @@ class SwiftGG {
                 print(character)
             }
         }
+        let cha1: Character = "!"
+        let cha2: [Character] = ["C", "a", "t", cha1, "🐱"]
+        print(String(cha2))
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#working-with-characters
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#concatenating-strings-and-characters
