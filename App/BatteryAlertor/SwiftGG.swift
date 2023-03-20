@@ -102,13 +102,19 @@ class SwiftGG {
     func characters() {
         let str1 = """
         let me
-         test some
+         test so
+        """
+        let str4 = """
+        me
         special characters
+        
+        """
+        let str5 = """
             such as\
          the \\backslash, warp\n, and quotes \"\"\" or \' and
         Unicode \u{24} \u{2665} \u{1F496}
         """
-        print(str1)
+        print(str1 + str4 + str5)
         var str2 = String()
         str2 = #"""
         🧐"""3⃣️
@@ -116,6 +122,7 @@ class SwiftGG {
         let str3 = ""
         if str3.isEmpty {
             str2 += "?"
+            str2.append("!")
             for character in str2 {
                 print(character)
             }
@@ -125,4 +132,4 @@ class SwiftGG {
         print(String(cha2))
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#concatenating-strings-and-characters
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#string-interpolation
