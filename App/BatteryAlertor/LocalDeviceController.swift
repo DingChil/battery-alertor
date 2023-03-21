@@ -29,11 +29,11 @@ public class BatteryListener {
             self.start()
         }
     }
-    
+
     deinit{
         MCGCDTimer.shared.cancleTimer(WithTimerName: "GCDTimer")
     }
-    
+
     func start() {
         do {
             // Take a snapshot of all the power source info
@@ -64,7 +64,7 @@ public class BatteryListener {
             fatalError()
         }
     }
-    
+
     // https://zhuanlan.zhihu.com/p/59530670
     func notificationAction(level:Int, title:String, power:String) {
         let content = UNMutableNotificationContent()
@@ -102,7 +102,7 @@ class MCGCDTimer {
     //单例
     static let shared = MCGCDTimer()
     lazy var timerContainer = [String: DispatchSourceTimer]()
-    
+
     /// GCD定时器
     /// - Parameters:
     ///   - name: 定时器名字
@@ -129,7 +129,7 @@ class MCGCDTimer {
             }
         })
     }
-    
+
     /// 取消定时器
     /// - Parameter name: 定时器名字
     func cancleTimer(WithTimerName name: String?) {
@@ -140,7 +140,7 @@ class MCGCDTimer {
         timerContainer.removeValue(forKey: name!)
         timer?.cancel()
     }
-    
+
     /// 检查定时器是否已存在
     /// - Parameter name: 定时器名字
     /// - Returns: 是否已经存在定时器
