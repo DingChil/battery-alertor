@@ -112,7 +112,7 @@ class SwiftGG {
         let str5 = """
             such as\
          the \\backslash, warp\n, and quotes \"\"\" or \' and
-        Unicode \u{24} \u{2665} \u{1F496}
+        Unicode \u{24} \u{2665} \u{1F496} \u{1F425}
         """
         print(str1 + str4 + str5)
         var str2 = String()
@@ -134,6 +134,13 @@ class SwiftGG {
         let str7 = "4x1=\(1*4)"
         print(str6)
         print(str7)
+        let eAcute: Character = "\u{E9}"
+        let combinedEAcute: Character = "\u{65}\u{301}"
+        let precomposed: Character = "\u{D55C}"
+        let decomposed: Character = "\u{1112}\u{1161}\u{11AB}"
+        let enclosedEAcute: Character = "\u{E9}\u{20DD}"
+        let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
+        print("\(eAcute) \(combinedEAcute) \(precomposed) \(decomposed) \(enclosedEAcute) \(regionalIndicatorForUS) ")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#unicode
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#counting-characters
