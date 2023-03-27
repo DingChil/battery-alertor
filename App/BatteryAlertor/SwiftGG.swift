@@ -100,15 +100,18 @@ class SwiftGG {
         print("\(list.isEmpty) \(!list.isEmpty) \(origin&&list.isEmpty) \(list.isEmpty||origin)")
     }
     func characters() {
+        // 多行字符串字面量
         let str1 = """
         let me
          test so
         """
+        // 换行拼接
         let str4 = """
         me
         special characters
         
         """
+        // 转义
         let str5 = """
             such as\
          the \\backslash, warp\n, and quotes \"\"\" or \' and
@@ -116,10 +119,12 @@ class SwiftGG {
         """
         print(str1 + str4 + str5)
         var str2 = String()
+        // 扩展字符串分隔符
         str2 = #"""
         🧐"""3⃣️
         """#
         let str3 = ""
+        // 追加和遍历字符串
         if str3.isEmpty {
             str2 += "?"
             str2.append("!")
@@ -130,10 +135,12 @@ class SwiftGG {
         let cha1: Character = "!"
         let cha2: [Character] = ["C", "a", "t", cha1, "🐱"]
         print(String(cha2))
+        // 字符串插值
         let str6 = #"\(2) times\\n 2.5\t is\n \#(Double(3) * 2.5)"#
         let str7 = "4x1=\(1*4)"
         print(str6)
-        print(str7)
+        print(str7, str7.count)
+        // 可扩展的字形群集
         let eAcute: Character = "\u{E9}"
         let combinedEAcute: Character = "\u{65}\u{301}"
         let precomposed: Character = "\u{D55C}"
@@ -141,6 +148,11 @@ class SwiftGG {
         let enclosedEAcute: Character = "\u{E9}\u{20DD}"
         let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
         print("\(eAcute) \(combinedEAcute) \(precomposed) \(decomposed) \(enclosedEAcute) \(regionalIndicatorForUS) ")
+        // 字符串数量
+        var word = "cafe"
+        print("the number of characters in \(word) is \(word.count)")
+        word += "\u{301}" // 拼接一个重音，U+0301
+        print("the number of characters in \(word) is \(word.count)")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#counting-characters
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#accessing-and-modifying-a-string
