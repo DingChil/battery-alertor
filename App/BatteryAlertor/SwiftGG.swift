@@ -137,7 +137,7 @@ class SwiftGG {
         print(String(cha2))
         // 字符串插值
         let str6 = #"\(2) times\\n 2.5\t is\n \#(Double(3) * 2.5)"#
-        let str7 = "3.1415926x7=\(3.1415926*7)"
+        let str7 = "3.1416x7=\(3.1416*7)"
         print(str6)
         print(str7)
         // 可扩展的字形群集
@@ -154,9 +154,13 @@ class SwiftGG {
         word += "\u{301}" // 拼接一个重音，U+0301
         print("the number of characters in \(word) is \(word.count)")
         // 字符串索引
-        print("\(str7) \(str7.count) \(str7[str7.startIndex]) \(str7[str7.index(before: str7.endIndex)])")
+        print("\(str7.count) \(str7[str7.startIndex]) \(str7[str7.index(before: str7.endIndex)])")
         // endIndex 是获取最后一个字符的后一个位置的索引
         print("\(str7[str7.index(after: str7.startIndex)]) \(str7[str7.index(str7.startIndex, offsetBy: 7)])")
+        // terminator 用于控制 print 的打印结尾
+        for index in str7.indices {
+           print("\(str7[index]) ", terminator: "")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#accessing-and-modifying-a-string
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#inserting-and-removing
