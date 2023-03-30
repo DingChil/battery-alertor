@@ -135,11 +135,6 @@ class SwiftGG {
         let cha1: Character = "!"
         let cha2: [Character] = ["C", "a", "t", cha1, "🐱"]
         print(String(cha2))
-        // 字符串插值
-        let str6 = #"\(2) times\\n 2.5\t is\n \#(Double(3) * 2.5)"#
-        let str7 = "3.1416x7=\(3.1416*7)"
-        print(str6)
-        print(str7)
         // 可扩展的字形群集
         let eAcute: Character = "\u{E9}"
         let combinedEAcute: Character = "\u{65}\u{301}"
@@ -153,6 +148,12 @@ class SwiftGG {
         print("the number of characters in \(word) is \(word.count)")
         word += "\u{301}" // 拼接一个重音，U+0301
         print("the number of characters in \(word) is \(word.count)")
+    }
+    func strings() {
+        // 字符串插值
+        let str6 = #"\(2) times\\n 2.5\t is\n \#(Double(3) * 2.5)"#
+        var str7 = "3.1416x7=\(3.1416*7)"
+        print(str6)
         // 字符串索引
         print("\(str7.count) \(str7[str7.startIndex]) \(str7[str7.index(before: str7.endIndex)])")
         // endIndex 是获取最后一个字符的后一个位置的索引
@@ -161,6 +162,10 @@ class SwiftGG {
         for index in str7.indices {
            print("\(str7[index]) ", terminator: "")
         }
+        str7.insert("?", at: str7.endIndex)
+        print("\(str7)")
+        str7.insert(contentsOf:"!!!", at: str7.index(before: str7.endIndex))
+        print("\(str7)")
     }
 }
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#inserting-and-removing
