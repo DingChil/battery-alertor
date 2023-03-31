@@ -12,7 +12,8 @@ class SwiftGG {
 //        self.basic()
 //        self.error()
 //        self.operators()
-        self.characters()
+//        self.characters()
+        self.strings()
          
     }
     func basic() {
@@ -166,6 +167,10 @@ class SwiftGG {
         print("\(str7)")
         str7.insert(contentsOf:"!!!", at: str7.index(before: str7.endIndex))
         print("\(str7)")
+        str7.remove(at: str7.index(before: str7.endIndex))
+        let str8 = str7.index(str7.endIndex, offsetBy: -6)..<str7.endIndex
+        str7.removeSubrange(str8)
+        print("\(str7)")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#inserting-and-removing
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#substrings
