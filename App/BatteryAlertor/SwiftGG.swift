@@ -163,14 +163,22 @@ class SwiftGG {
         for index in str7.indices {
            print("\(str7[index]) ", terminator: "")
         }
+        // 字符插入
         str7.insert("?", at: str7.endIndex)
         print("\(str7)")
+        // 字符串插入
         str7.insert(contentsOf:"!!!", at: str7.index(before: str7.endIndex))
         print("\(str7)")
+        // 字符删除
         str7.remove(at: str7.index(before: str7.endIndex))
+        // 字符串删除
         let str8 = str7.index(str7.endIndex, offsetBy: -6)..<str7.endIndex
+        // 根据区间删除
         str7.removeSubrange(str8)
         print("\(str7)")
+        // 根据区间获取子串
+        let firstIndex = str7.firstIndex(of: "=") ?? str7.endIndex
+        print("\(str7[..<firstIndex])")
     }
 }
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#substrings
