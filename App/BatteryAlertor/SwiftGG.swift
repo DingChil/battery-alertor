@@ -178,7 +178,12 @@ class SwiftGG {
         print("\(str7)")
         // 根据区间获取子串
         let firstIndex = str7.firstIndex(of: "=") ?? str7.endIndex
-        print("\(str7[..<firstIndex])")
+        print("\(firstIndex) \(str7[..<firstIndex])")
+        let str9 = "\u{E9}\u{D55C}"
+        let str0 = "\u{65}\u{301}\u{1112}\u{1161}\u{11AB}"
+        if str0 == str9 {
+            print("\(str0) \(str9) are considered equal")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#substrings
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#prefix-and-suffix-equality
