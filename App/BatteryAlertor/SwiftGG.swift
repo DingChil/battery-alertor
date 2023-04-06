@@ -181,9 +181,11 @@ class SwiftGG {
         print("\(firstIndex) \(str7[..<firstIndex])")
         let str9 = "\u{E9}\u{D55C}"
         let str0 = "\u{65}\u{301}\u{1112}\u{1161}\u{11AB}"
+        // 字符相等
         if str0 == str9 {
             print("\(str0) \(str9) are considered equal")
         }
+        print("\(str7.hasPrefix("3.14")) \(str7.hasSuffix("9"))")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#prefix-and-suffix-equality
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#unicode-representations-of-strings
