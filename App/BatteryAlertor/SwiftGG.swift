@@ -186,6 +186,10 @@ class SwiftGG {
             print("\(str0) \(str9) are considered equal")
         }
         print("\(str7.hasPrefix("3.14")) \(str7.hasSuffix("9"))")
+        // 遍历 String 的 utf8 属性来获得 UInt8 值
+        for codeUnit in str9.utf8 {
+            print("\(codeUnit) ", terminator: "")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#unicode-representations-of-strings
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#utf-16-representation
