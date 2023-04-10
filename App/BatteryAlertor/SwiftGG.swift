@@ -187,9 +187,14 @@ class SwiftGG {
         }
         print("\(str7.hasPrefix("3.14")) \(str7.hasSuffix("9"))")
         // 遍历 String 的 utf8 属性来获得 UInt8 值
-        for codeUnit in str9.utf8 {
-            print("\(codeUnit) ", terminator: "")
+        for code in str9.utf8 {
+            print("\(code) ", terminator: "")
+        }
+        print("\n⬆️UInt8 UInt16⬇️")
+        // UTF16View 是无符号16位（ UInt16 ）值的集合
+        for code in str0.utf16 {
+            print("\(code) ", terminator: "")
         }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#utf-16-representation
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#unicode-scalars-representation
