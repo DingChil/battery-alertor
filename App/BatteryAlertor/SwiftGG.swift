@@ -195,6 +195,11 @@ class SwiftGG {
         for code in str0.utf16 {
             print("\(code) ", terminator: "")
         }
+        // 用 UInt32 来表示 Unicode 标量
+        print("\nUnicodeScalarView⬇️")
+        for code in str9.unicodeScalars {
+            print("\(code.value) ", terminator: "")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/03_strings_and_characters#unicode-scalars-representation
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types
