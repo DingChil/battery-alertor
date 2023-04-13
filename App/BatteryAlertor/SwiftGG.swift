@@ -13,7 +13,8 @@ class SwiftGG {
 //        self.error()
 //        self.operators()
 //        self.characters()
-        self.strings()
+//        self.strings()
+        self.collections()
          
     }
     func basic() {
@@ -201,5 +202,10 @@ class SwiftGG {
             print("\(code.value) ", terminator: "")
         }
     }
+    func collections() {
+        var int1: [Int] = []
+        int1.append(3)
+        print("int1 is of type [Int] with \(int1.count) items.")
+    }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-an-array-with-a-default-value
