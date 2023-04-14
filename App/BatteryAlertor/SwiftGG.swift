@@ -203,9 +203,10 @@ class SwiftGG {
         }
     }
     func collections() {
-        var int1: [Int] = []
-        int1.append(3)
-        print("int1 is of type [Int] with \(int1.count) items.")
+        var arr1: [Int] = []
+        arr1.append(2)
+        let arr2 = Array(repeating: 0.0, count: 4)
+        print("arr1 is of type [Int] with \(arr1.count) items, arr2 is of type [Double] : \(arr2).")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-an-array-with-a-default-value
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-an-array-by-adding-two-arrays-together
