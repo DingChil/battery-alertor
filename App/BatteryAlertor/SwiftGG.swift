@@ -203,10 +203,12 @@ class SwiftGG {
         }
     }
     func collections() {
-        var arr1: [Int] = []
-        arr1.append(2)
-        let arr2 = Array(repeating: 0.0, count: 4)
-        print("arr1 is of type [Int] with \(arr1.count) items, arr2 is of type [Double] : \(arr2).")
+        // 显式声明
+        var arr1: [Double] = []
+        arr1.append(3)
+        let arr2 = Array(repeating: 1.0, count: 2)
+        print("arr1 is of type [Double] with \(arr1.count) items, arr2 is of type [Double] : \(arr2)")
+        print("arr1+2 is \(arr1 + arr2)")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-an-array-by-adding-two-arrays-together
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-an-array-with-an-array-literals
