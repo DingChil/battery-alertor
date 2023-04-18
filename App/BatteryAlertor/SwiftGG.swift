@@ -206,9 +206,14 @@ class SwiftGG {
         // 显式声明
         var arr1: [Double] = []
         arr1.append(3)
+        // 带默认值声明
         let arr2 = Array(repeating: 1.0, count: 2)
         print("arr1 is of type [Double] with \(arr1.count) items, arr2 is of type [Double] : \(arr2)")
+        // 数组相加
         print("arr1+2 is \(arr1 + arr2)")
+        // 构造数组
+        let arr3: [String] = ["see"]
+        print("arr3: \(arr3)")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-an-array-with-an-array-literals
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#accessing-and-modifying-an-array
