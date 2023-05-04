@@ -215,10 +215,14 @@ class SwiftGG {
         let arr3: [String] = ["see"]
         print("arr3: \(arr3), isEmpty: \(arr3.isEmpty)")
         // 追加，跟 append 同理
-        arr1 += [5, 7]
+        arr1 += [5, 7, 9]
         // insert 可以指定在哪里前插
-        arr1.insert(1, at: 0)
+        arr1.insert(1, at: 2)
+        // 指定下标删除
+        arr1.remove(at: 1)
+        // 指定删除最后一个
+        arr1.removeLast()
         print("arr1: \(arr1)")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#accessing-and-modifying-an-array
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#iterating-over-an-array
