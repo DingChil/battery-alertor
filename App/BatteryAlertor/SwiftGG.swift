@@ -218,6 +218,10 @@ class SwiftGG {
         arr1 += [5, 7, 9]
         // insert 可以指定在哪里前插
         arr1.insert(1, at: 2)
+        // enumerated 会返回由索引和值组成的元组数组
+        for (index, value) in arr1.enumerated() {
+            print("Item \(String(index + 1)): \(value)")
+        }
         // 指定下标删除
         arr1.remove(at: 1)
         // 指定删除最后一个
@@ -225,4 +229,4 @@ class SwiftGG {
         print("arr1: \(arr1)")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#iterating-over-an-array
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#sets
