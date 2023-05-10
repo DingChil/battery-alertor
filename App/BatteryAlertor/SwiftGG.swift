@@ -227,9 +227,9 @@ class SwiftGG {
         // 指定删除最后一个
         arr1.removeLast()
         print("arr1: \(arr1)")
-        var arr4 = Set<Character>()
-        arr4.insert("a")
-        print("letters is of type Set<Character> with \(arr4.count) items.")
+        var arr4: Set<String> = ["aa", "bb"]
+        arr4.insert("cc")
+        print("arr4 is of type Set<String> with \(arr4.count) items, is means \(arr4.isEmpty) now")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-a-set-with-an-array-literal
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#accesing-and-modifying-a-set
