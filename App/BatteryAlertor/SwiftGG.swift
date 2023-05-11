@@ -229,7 +229,14 @@ class SwiftGG {
         print("arr1: \(arr1)")
         var arr4: Set<String> = ["aa", "bb"]
         arr4.insert("cc")
-        print("arr4 is of type Set<String> with \(arr4.count) items, is means \(arr4.isEmpty) now")
+        print("array is of type Set<String> with \(arr4.count) items, is means \(arr4.isEmpty) now")
+        // 删除具体元素
+        if let result = arr4.remove("bb") {
+            print("\(result)? I'm over it.")
+        } else {
+            print("I never much cared for that.")
+        }
+        print("now array is \(arr4)")
     }
 }
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#accesing-and-modifying-a-set
