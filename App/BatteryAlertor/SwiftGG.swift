@@ -236,7 +236,7 @@ class SwiftGG {
         } else {
             print("I never much cared for that.")
         }
-        print("now array is \(arr4)")
+        print("now array is \(arr4), and here have aa is \(arr4.contains("aa"))")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#accesing-and-modifying-a-set
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#iterating-over-a-set
