@@ -227,8 +227,8 @@ class SwiftGG {
         // 指定删除最后一个
         arr1.removeLast()
         print("arr1: \(arr1)")
-        var arr4: Set<String> = ["aa", "bb"]
-        arr4.insert("cc")
+        var arr4: Set<String> = ["cc", "bb"]
+        arr4.insert("aa")
         print("array is of type Set<String> with \(arr4.count) items, is means \(arr4.isEmpty) now")
         // 删除具体元素
         if let result = arr4.remove("bb") {
@@ -237,6 +237,10 @@ class SwiftGG {
             print("I never much cared for that.")
         }
         print("now array is \(arr4), and here have aa is \(arr4.contains("aa"))")
+        // 排序
+        for num in arr1.sorted() {
+            print("Item \(num)")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#iterating-over-a-set
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#performing-set-operations
