@@ -241,6 +241,13 @@ class SwiftGG {
         for num in arr1.sorted() {
             print("Item \(num)")
         }
+        let odd: Set = [1, 3, 5, 7, 9]
+        let even: Set = [0, 2, 4, 6, 8]
+        let prime: Set = [2, 3, 5, 7]
+        print(odd.union(even))
+        print(odd.intersection(even))
+        print(odd.subtracting(prime))
+        print(odd.symmetricDifference(prime))
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#performing-set-operations
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#fundamental-set-operations
