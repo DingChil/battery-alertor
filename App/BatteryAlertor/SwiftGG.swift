@@ -14,7 +14,8 @@ class SwiftGG {
 //        self.operators()
 //        self.characters()
 //        self.strings()
-        self.collections()
+//        self.arrays()
+        self.sets()
          
     }
     func basic() {
@@ -202,7 +203,7 @@ class SwiftGG {
             print("\(code.value) ", terminator: "")
         }
     }
-    func collections() {
+    func arrays() {
         // 显式声明
         var arr1: [Double] = []
         arr1.append(3)
@@ -241,13 +242,19 @@ class SwiftGG {
         for num in arr1.sorted() {
             print("Item \(num)")
         }
+    }
+    func sets() {
         let odd: Set = [1, 3, 5, 7, 9]
         let even: Set = [0, 2, 4, 6, 8]
         let prime: Set = [2, 3, 5, 7]
-        print(odd.union(even))
-        print(odd.intersection(even))
-        print(odd.subtracting(prime))
-        print(odd.symmetricDifference(prime))
+        // 并集 union 根据两个集合的所有值创建一个新的集合
+        print("union: \(odd.union(even).sorted())")
+        // 交集 intersection 根据两个集合的交集创建一个新的集合
+        print("intersection: \(odd.intersection(even).sorted())")
+        // 补集 subtracting 根据不在另一个集合中的值创建一个新的集合
+        print("subtracting: \(odd.subtracting(prime).sorted())")
+        // 对称差 symmetricDifference 根据两个集合不相交的值创建一个新的集合
+        print("symmetric: \(odd.symmetricDifference(prime).sorted())")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#fundamental-set-operations
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#set-membership-and-equality
