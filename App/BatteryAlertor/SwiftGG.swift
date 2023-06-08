@@ -255,6 +255,14 @@ class SwiftGG {
         print("subtracting: \(odd.subtracting(prime).sorted())")
         // 对称差 symmetricDifference 根据两个集合不相交的值创建一个新的集合
         print("symmetric: \(odd.symmetricDifference(prime).sorted())")
+        // 判断一个集合中的所有值是否也被包含在另外一个集合中
+        print("subset: \(prime.isSubset(of: odd))")
+        // 判断一个集合是否包含另一个集合中所有的值
+        print("superset: \(odd.isSuperset(of: prime))")
+        // 判断一个集合是否是另外一个集合的子集合或者父集合并且两个集合并不相等
+        print("strict subset: \(odd.isStrictSubset(of: even)) \(even.isStrictSuperset(of: odd))")
+        // 判断两个集合是否不含有相同的值
+        print("disjoint: \(odd.isDisjoint(with: even))")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#set-membership-and-equality
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#dictionaries
