@@ -15,7 +15,8 @@ class SwiftGG {
 //        self.characters()
 //        self.strings()
 //        self.arrays()
-        self.sets()
+//        self.sets()
+        self.dicts()
          
     }
     func basic() {
@@ -264,5 +265,10 @@ class SwiftGG {
         // 判断两个集合是否不含有相同的值
         print("disjoint: \(odd.isDisjoint(with: even))")
     }
+    func dicts() {
+        var dic1: [Int: String] = [:]
+        dic1[16] = "sixteen"
+        print("dic1: \(dic1)")
+    }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#dictionaries
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-a-dictionary-with-a-dictionary-literal
