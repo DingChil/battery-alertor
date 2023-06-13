@@ -266,9 +266,15 @@ class SwiftGG {
         print("disjoint: \(odd.isDisjoint(with: even))")
     }
     func dicts() {
-        var dic1: [Int: String] = [:]
+        var dic1: [Int: String] = [12: "twelve"]
         dic1[16] = "sixteen"
-        print("dic1: \(dic1)")
+        print("dic1: \(dic1), isEmpty? \(dic1.isEmpty), count \(dic1.count)")
+        // 设置或者更新特定键对应的值，不存在对应值的时候会设置新值，或者在存在时更新已存在的值并返回更新值之前的原值
+        if let oldValue = dic1.updateValue("ten", forKey: 10) {
+            print("The old value for dic1 was \(oldValue).")
+        } else {
+            print("no ten: \(dic1)")
+        }
     }
 }
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-a-dictionary-with-a-dictionary-literal
