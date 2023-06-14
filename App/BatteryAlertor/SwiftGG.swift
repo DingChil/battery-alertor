@@ -275,6 +275,11 @@ class SwiftGG {
         } else {
             print("no ten: \(dic1)")
         }
+        // 使用下标语法通过将某个键的对应值赋值为 nil 来从字典里移除一个键值对
+        dic1[16] = nil
+        if let removedValue = dic1.removeValue(forKey: 12) {
+            print("delete \(removedValue): \(dic1)")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#creating-a-dictionary-with-a-dictionary-literal
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#accessing-and-modifying-a-dictionary
