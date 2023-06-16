@@ -266,9 +266,10 @@ class SwiftGG {
         print("disjoint: \(odd.isDisjoint(with: even))")
     }
     func dicts() {
-        var dic1: [Int: String] = [12: "twelve"]
+        var dic1: [Int: String] = [12: "twelve", 14: "Fourteen", 18: "Eighteen", 20: "Twenty"]
         dic1[16] = "sixteen"
-        print("dic1: \(dic1), isEmpty? \(dic1.isEmpty), count \(dic1.count)")
+        print("dic1 isEmpty? \(dic1.isEmpty), count \(dic1.count):")
+        print(dic1)
         // 设置或者更新特定键对应的值，不存在对应值的时候会设置新值，或者在存在时更新已存在的值并返回更新值之前的原值
         if let oldValue = dic1.updateValue("ten", forKey: 10) {
             print("The old value for dic1 was \(oldValue).")
@@ -278,7 +279,10 @@ class SwiftGG {
         // 使用下标语法通过将某个键的对应值赋值为 nil 来从字典里移除一个键值对
         dic1[16] = nil
         if let removedValue = dic1.removeValue(forKey: 12) {
-            print("delete \(removedValue): \(dic1)")
+            print("delete 16 and \(removedValue): \(dic1)")
+        }
+        for (key, val) in dic1 {
+            print("\(key): \(val)")
         }
     }
 }
