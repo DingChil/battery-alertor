@@ -284,6 +284,16 @@ class SwiftGG {
         for (key, val) in dic1 {
             print("\(key): \(val)")
         }
+        let dic1num = [Int](dic1.keys)
+        print(dic1num)
+        for data in dic1.keys {
+            print(data)
+        }
+        let dic1txt = [String](dic1.values)
+        print(dic1txt)
+        for data in dic1.values {
+            print(data)
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/04_collection_types#accessing-and-modifying-a-dictionary
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow
