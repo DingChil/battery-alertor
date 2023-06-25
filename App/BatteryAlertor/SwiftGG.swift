@@ -16,7 +16,8 @@ class SwiftGG {
 //        self.strings()
 //        self.arrays()
 //        self.sets()
-        self.dicts()
+//        self.dicts()
+        self.controls()
          
     }
     func basic() {
@@ -295,5 +296,18 @@ class SwiftGG {
             print(data)
         }
     }
+    func controls() {
+        let minutes = 60
+        let minuteInterval = 5
+        for tickMark in stride(from: 40, to: minutes, by: minuteInterval) {
+            print("real \(tickMark) in minutes")
+        }
+        // to 是至到但不包含，through 是直到并包括
+        let hours = 12
+        let hourInterval = 3
+        for tickMark in stride(from: 0, through: hours, by: hourInterval) {
+            print("real \(tickMark) in hours")
+        }
+    }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#while-loops
