@@ -308,6 +308,31 @@ class SwiftGG {
         for tickMark in stride(from: 0, through: hours, by: hourInterval) {
             print("real \(tickMark) in hours")
         }
+        let finalSquare = 25
+        var board = [Int](repeating: 0, count: finalSquare + 1)
+        board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+        board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+        var square = 0
+        var diceRoll = 0
+        repeat {
+            // 顺着梯子爬上去或者顺着蛇滑下去
+            square += board[square]
+            // 掷骰子
+            diceRoll += 1
+            if diceRoll == 7 { diceRoll = 1 }
+            // 根据点数移动
+            square += diceRoll
+        } while square < finalSquare
+        print("Game over!")
+        let someCharacter: Character = "z"
+        switch someCharacter {
+        case "a":
+            print("The first letter of the alphabet")
+        case "z":
+            print("The last letter of the alphabet")
+        default:
+            print("Some other character")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#while-loops
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#switch
