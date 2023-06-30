@@ -333,6 +333,14 @@ class SwiftGG {
         default:
             print("Some other character")
         }
+        // switch 不允许隐式贯穿
+        let anotherCharacter: Character = "a"
+        switch anotherCharacter {
+        case "a", "A":
+            print("The letter A")
+        default:
+            print("Not the letter A")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#switch
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#interval-matching
