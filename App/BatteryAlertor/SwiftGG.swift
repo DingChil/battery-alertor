@@ -325,6 +325,7 @@ class SwiftGG {
         } while square < finalSquare
         print("Game over!")
         let someCharacter: Character = "z"
+        // switch 不允许隐式贯穿
         switch someCharacter {
         case "a":
             print("The first letter of the alphabet")
@@ -333,7 +334,7 @@ class SwiftGG {
         default:
             print("Some other character")
         }
-        // switch 不允许隐式贯穿
+        // 复合匹配
         let anotherCharacter: Character = "a"
         switch anotherCharacter {
         case "a", "A":
@@ -341,6 +342,23 @@ class SwiftGG {
         default:
             print("Not the letter A")
         }
+        // 区间匹配
+        let approximateCount = 62
+        let countedThings = "moons orbiting Saturn"
+        let naturalCount: String
+        switch approximateCount {
+        case 1..<5:
+            naturalCount = "a few"
+        case 5..<12:
+            naturalCount = "several"
+        case 12..<100:
+            naturalCount = "dozens of"
+        case 100..<1000:
+            naturalCount = "hundreds of"
+        default:
+            naturalCount = "many"
+        }
+        print("There are \(naturalCount) \(countedThings).")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#interval-matching
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#tuples
