@@ -359,6 +359,16 @@ class SwiftGG {
             naturalCount = "many"
         }
         print("There are \(naturalCount) \(countedThings).")
+        // 匹配元组与值绑定
+        let anotherPoint = (2, 3)
+        switch anotherPoint {
+        case let (x, y):
+            print("somewhere else at (\(x), \(y))")
+        case (1, let y):
+            print("on the y-axis with a y value of \(y)")
+        case (let x, 2):
+            print("on the x-axis with an x value of \(x)")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#tuples
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#where
