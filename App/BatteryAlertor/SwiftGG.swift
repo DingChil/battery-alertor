@@ -369,6 +369,16 @@ class SwiftGG {
         case (let x, 2):
             print("on the x-axis with an x value of \(x)")
         }
+        // 额外条件
+        let yetAnotherPoint = (1, -1)
+        switch yetAnotherPoint {
+        case let (x, y):
+            print("(\(x), \(y)) is just some arbitrary point")
+        case let (x, y) where x == -y:
+            print("(\(x), \(y)) is on the line x == -y")
+        case let (x, y) where x == y:
+            print("(\(x), \(y)) is on the line x == y")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#where
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#compound-cases
