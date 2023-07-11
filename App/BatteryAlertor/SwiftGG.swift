@@ -379,6 +379,17 @@ class SwiftGG {
         case let (x, y) where x == y:
             print("(\(x), \(y)) is on the line x == y")
         }
+        // 多行复合匹配
+        let oneCharacter: Character = "e"
+        switch oneCharacter {
+        case "a", "e", "i", "o", "u":
+            print("\(oneCharacter) is a vowel")
+        case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
+             "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+            print("\(oneCharacter) is a consonant")
+        default:
+            print("\(oneCharacter) is not a vowel or a consonant")
+        }
     }
 }
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#compound-cases
