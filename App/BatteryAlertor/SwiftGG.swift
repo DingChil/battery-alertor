@@ -390,6 +390,18 @@ class SwiftGG {
         default:
             print("\(oneCharacter) is not a vowel or a consonant")
         }
+        // 立刻停止本次循环
+        let puzzleInput = "great minds think alike"
+        var puzzleOutput = ""
+        for character in puzzleInput {
+            switch character {
+            case "a", "e", "i", "o", "u", " ":
+                continue
+            default:
+                puzzleOutput.append(character)
+            }
+        }
+        print(puzzleOutput)
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#compound-cases
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#control-transfer-statements
