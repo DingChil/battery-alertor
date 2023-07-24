@@ -402,6 +402,41 @@ class SwiftGG {
             }
         }
         print(puzzleOutput)
+        // 贯穿 fallthrough 会简单地使代码继续连接到下一个 case 中
+        let integerToDescribe = 5
+        var description = "The number \(integerToDescribe) is"
+        switch integerToDescribe {
+        case 2, 3, 5, 7, 11, 13, 17, 19:
+            description += " a prime number, and also"
+            fallthrough
+        default:
+            description += " an integer!!!"
+        }
+        print(description)
+        // 标签语句 Labeled Statements
+        let finalSquare2 = 25
+        let board2 = [Int](repeating: 0, count: finalSquare + 1)
+        board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+        board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+        var square2 = 0
+        var diceRoll2 = 0
+        gameLoop: while square2 != finalSquare2 {
+            diceRoll2 += 1
+            if diceRoll2 == 7 { diceRoll2 = 1 }
+            switch square2 + diceRoll2 {
+            case finalSquare2:
+                // 骰子数刚好使玩家移动到最终的方格里，游戏结束。
+                break gameLoop
+            case let newSquare where newSquare > finalSquare2:
+                // 骰子数将会使玩家的移动超出最后的方格，那么这种移动是不合法的，玩家需要重新掷骰子
+                continue gameLoop
+            default:
+                // 合法移动，做正常的处理
+                square2 += diceRoll2
+                square2 += board2[square2]
+            }
+        }
+        print("Labeled Statements Game Over.")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#control-transfer-statements
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#early-exit
