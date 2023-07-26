@@ -437,6 +437,20 @@ class SwiftGG {
             }
         }
         print("Labeled Statements Game Over.")
+        EarlyExit(person: ["name": "John"])
+        EarlyExit(person: ["name": "Jane", "location": "Cupertino"])
+    }
+    func EarlyExit(person: [String: String]) {
+        guard let name = person["name"] else {
+            return
+        }
+        print("Hello \(name)!")
+
+        guard let location = person["location"] else {
+            print("I hope the weather is nice near you.")
+            return
+        }
+        print("I hope the weather is nice in \(location).")
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#early-exit
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#checking-api-availability
