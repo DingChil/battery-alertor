@@ -439,18 +439,36 @@ class SwiftGG {
         print("Labeled Statements Game Over.")
         EarlyExit(person: ["name": "John"])
         EarlyExit(person: ["name": "Jane", "location": "Cupertino"])
+        print(chooseBestColor())
     }
     func EarlyExit(person: [String: String]) {
         guard let name = person["name"] else {
             return
         }
         print("Hello \(name)!")
-
+        // 不符合条件就退出
         guard let location = person["location"] else {
             print("I hope the weather is nice near you.")
             return
         }
         print("I hope the weather is nice in \(location).")
     }
+    @available(macOS 10.12, *)
+    struct ColorPreference {
+        var bestColor = "blue"
+        var betterColor = "pink"
+    }
+    func chooseBestColor() -> String {
+        // 检查 12 以上可用，否则返回
+        guard #available(macOS 10.12, *) else{
+            return "gray"
+        }
+        let colors = ColorPreference()
+        // 低于 13 不可用
+        if #unavailable(macOS 10.13) {
+            return colors.bestColor
+        }
+        return colors.betterColor
+    }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/05_control_flow#checking-api-availability
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions
