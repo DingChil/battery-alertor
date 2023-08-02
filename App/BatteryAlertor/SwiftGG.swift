@@ -17,7 +17,8 @@ class SwiftGG {
 //        self.arrays()
 //        self.sets()
 //        self.dicts()
-        self.controls()
+//        self.controls()
+        self.funcs()
          
     }
     func basic() {
@@ -441,6 +442,7 @@ class SwiftGG {
         EarlyExit(person: ["name": "Jane", "location": "Cupertino"])
         print(chooseBestColor())
     }
+    // 无需返回字符串
     func EarlyExit(person: [String: String]) {
         guard let name = person["name"] else {
             return
@@ -458,6 +460,7 @@ class SwiftGG {
         var bestColor = "blue"
         var betterColor = "pink"
     }
+    // 指定返回字符串
     func chooseBestColor() -> String {
         // 检查 12 以上可用，否则返回
         guard #available(macOS 10.12, *) else{
@@ -469,6 +472,23 @@ class SwiftGG {
             return colors.bestColor
         }
         return colors.betterColor
+    }
+    func minMax(array: [Int]) -> (min: Int, max: Int) {
+        var currentMin = array[0]
+        var currentMax = array[0]
+        for value in array[1..<array.count] {
+            if value < currentMin {
+                currentMin = value
+            } else if value > currentMax {
+                currentMax = value
+            }
+        }
+        return (currentMin, currentMax)
+    }
+    func funcs() {
+        // 多重返回值
+        let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
+        print("min is \(bounds.min) and max is \(bounds.max)")
     }
 }
 // https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions
