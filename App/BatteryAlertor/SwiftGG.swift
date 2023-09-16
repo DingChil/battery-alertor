@@ -473,7 +473,20 @@ class SwiftGG {
         }
         return colors.betterColor
     }
-    func minMax(array: [Int]) -> (min: Int, max: Int) {
+    func minMax1(array: [Int]) -> (min: Int, max: Int) {
+        var currentMin = array[0]
+        var currentMax = array[0]
+        for value in array[1..<array.count] {
+            if value < currentMin {
+                currentMin = value
+            } else if value > currentMax {
+                currentMax = value
+            }
+        }
+        return (currentMin, currentMax)
+    }
+    func minMax2(array: [Int]) -> (min: Int, max: Int)? {
+        if array.isEmpty { return nil }
         var currentMin = array[0]
         var currentMax = array[0]
         for value in array[1..<array.count] {
@@ -487,8 +500,11 @@ class SwiftGG {
     }
     func funcs() {
         // 多重返回值
-        let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
-        print("min is \(bounds.min) and max is \(bounds.max)")
+        let bounds1 = minMax1(array: [8, -6, 2, 109, 3, 71])
+        // 可选元组返回类型，只有可选才能 if
+        if let bounds2 = minMax2(array: [8, -6, 2, 109, 3, 71]) {
+            print("2 min is \(bounds2.min) and max is \(bounds2.max)")
+        }
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions#functions-with-an-implicit-return
