@@ -498,6 +498,12 @@ class SwiftGG {
         }
         return (currentMin, currentMax)
     }
+    func greeting(for person: String) -> String {
+        "Hello, 1." + person + "!"
+    }
+    func anotherGreeting(for person: String) -> String {
+        return "Hello, 2." + person + "!"
+    }
     func funcs() {
         // 多重返回值
         let bounds1 = minMax1(array: [8, -6, 2, 109, 3, 71])
@@ -505,6 +511,9 @@ class SwiftGG {
         if let bounds2 = minMax2(array: [8, -6, 2, 109, 3, 71]) {
             print("2 min is \(bounds2.min) and max is \(bounds2.max)")
         }
+        // 隐式返回的函数
+        print(greeting(for: "Dave"))
+        print(anotherGreeting(for: "Dave"))
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions#functions-with-an-implicit-return
+// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions#function-argument-labels-and-parameter-names
