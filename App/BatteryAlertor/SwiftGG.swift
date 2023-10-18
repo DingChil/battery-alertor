@@ -504,6 +504,9 @@ class SwiftGG {
     func anotherGreeting(for person: String) -> String {
         return "Hello, 2." + person + "!"
     }
+    func greet(person: String, from hometown: String) -> String {
+        return "Hello \(person)!  Glad you could visit from \(hometown)."
+    }
     func funcs() {
         // 多重返回值
         let bounds1 = minMax1(array: [8, -6, 2, 109, 3, 71])
@@ -514,6 +517,8 @@ class SwiftGG {
         // 隐式返回的函数
         print(greeting(for: "Dave"))
         print(anotherGreeting(for: "Dave"))
+        // 指定参数标签
+        print(greet(person: "Bill", from: "Cupertino"))
     }
 }
-// https://swiftgg.gitbook.io/swift/swift-jiao-cheng/06_functions#function-argument-labels-and-parameter-names
+// https://gitbook.swiftgg.team/swift/swift-jiao-cheng/06_functions#omitting-argument-labels
