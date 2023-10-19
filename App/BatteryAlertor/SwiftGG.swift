@@ -507,6 +507,9 @@ class SwiftGG {
     func greet(person: String, from hometown: String) -> String {
         return "Hello \(person)!  Glad you could visit from \(hometown)."
     }
+    func omittingArgumentLabels(_ firstParameterName: Int, secondParameterName: Int) -> String {
+        return "You will see the first \(firstParameterName) and the second \(secondParameterName)."
+    }
     func funcs() {
         // 多重返回值
         let bounds1 = minMax1(array: [8, -6, 2, 109, 3, 71])
@@ -519,6 +522,8 @@ class SwiftGG {
         print(anotherGreeting(for: "Dave"))
         // 指定参数标签
         print(greet(person: "Bill", from: "Cupertino"))
+        // 忽略参数标签
+        print(omittingArgumentLabels(1, secondParameterName: 2))
     }
 }
-// https://gitbook.swiftgg.team/swift/swift-jiao-cheng/06_functions#omitting-argument-labels
+// https://gitbook.swiftgg.team/swift/swift-jiao-cheng/06_functions#variadic-parameters
