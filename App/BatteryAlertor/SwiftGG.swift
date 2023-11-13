@@ -510,6 +510,13 @@ class SwiftGG {
     func omittingArgumentLabels(_ firstParameterName: Int, secondParameterName: Int) -> String {
         return "You will see the first \(firstParameterName) and the second \(secondParameterName)."
     }
+    func arithmeticMean(_ numbers: Double...) -> Double {
+        var total: Double = 0
+        for number in numbers {
+            total += number
+        }
+        return total / Double(numbers.count)
+    }
     func funcs() {
         // 多重返回值
         let bounds1 = minMax1(array: [8, -6, 2, 109, 3, 71])
@@ -524,6 +531,9 @@ class SwiftGG {
         print(greet(person: "Bill", from: "Cupertino"))
         // 忽略参数标签
         print(omittingArgumentLabels(1, secondParameterName: 2))
+        // 可变参数可接受零个或多个值
+        print(arithmeticMean(1, 2, 3, 4, 5))
+        print(arithmeticMean(3, 8.25, 18.75))
     }
 }
-// https://gitbook.swiftgg.team/swift/swift-jiao-cheng/06_functions#variadic-parameters
+// https://gitbook.swiftgg.team/swift/swift-jiao-cheng/06_functions#in-out-parameters
