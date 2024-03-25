@@ -517,6 +517,11 @@ class SwiftGG {
         }
         return total / Double(numbers.count)
     }
+    func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+        let temporaryA = a
+        a = b
+        b = temporaryA
+    }
     func funcs() {
         // 多重返回值
         let bounds1 = minMax1(array: [8, -6, 2, 109, 3, 71])
@@ -534,6 +539,11 @@ class SwiftGG {
         // 可变参数可接受零个或多个值
         print(arithmeticMean(1, 2, 3, 4, 5))
         print(arithmeticMean(3, 8.25, 18.75))
+        // 输入输出参数
+        var someInt = 3
+        var anotherInt = 107
+        swapTwoInts(&someInt, &anotherInt)
+        print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
     }
 }
-// https://gitbook.swiftgg.team/swift/swift-jiao-cheng/06_functions#in-out-parameters
+// https://gitbook.swiftgg.team/swift/swift-jiao-cheng/06_functions#function-types
